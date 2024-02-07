@@ -1,0 +1,22 @@
+.inputBlock{
+    display: flex;
+    flex-direction: row;
+   justify-content: center;
+   align-items: center;
+    input{
+        border: solid 1px rgb(204, 203, 203);
+        border-radius: 10px;
+        margin: 1vw;
+        padding: 1vw;
+    }
+
+button{
+    padding: 1vw;
+    border-radius: 10px;
+    border: solid 1px rgb(204, 203, 203);
+    background-color: rgba(228, 230, 227, 0.856);
+    cursor: pointer;
+
+}
+    
+}
