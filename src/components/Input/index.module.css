@@ -2,10 +2,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -23,6 +19,37 @@
   padding: 1vw;
   border-radius: 10px;
   border: solid 1px rgb(204, 203, 203);
-  background-color: rgba(228, 230, 227, 0.856);
+  color: white;
+  font-size: 2vw;
+  background-color: rgba(120, 193, 241, 0.856);
   cursor: pointer;
+  min-width: 44vw;
+}
+.inputBlock .timeBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1vw;
+}
+.inputBlock h3 {
+  font-size: 2vw;
+}
+
+.weidInput {
+  min-width: 44vw;
+}
+
+.taskDescriptionInput {
+  min-width: 44vw;
+  min-height: 30vh;
 }

@@ -1,6 +1,5 @@
 .inputBlock{
     display: flex;
-    flex-direction: row;
    justify-content: center;
    align-items: center;
     input{
@@ -14,9 +13,28 @@ button{
     padding: 1vw;
     border-radius: 10px;
     border: solid 1px rgb(204, 203, 203);
-    background-color: rgba(228, 230, 227, 0.856);
+    color: white;
+    font-size: 2vw;
+    background-color: rgba(120, 193, 241, 0.856);
     cursor: pointer;
+    min-width: 44vw;
 
 }
-    
+.timeBlock{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+h3{
+    font-size: 2vw;
+}   
+}
+.weidInput{
+    min-width: 44vw;
+}
+.taskDescriptionInput{
+    min-width: 44vw;
+    min-height: 30vh;
 }
