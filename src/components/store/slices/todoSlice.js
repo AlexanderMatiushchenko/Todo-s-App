@@ -9,12 +9,12 @@ const todoSlice=createSlice({
         addTodo(store,action){
             store.todos.push({
                 id:new Date().toString(),
-                createdDatum: new Date().toString(),
-                deadLineDatum: action.payload.date,
+                createdDate: new Date().toString(),
+                deadLineDate: action.payload.taskDeadLineDate,
                 taskStartTime: action.payload.taskStartTime,
                 taskEndTime: action.payload.taskEndTime,
                 taskDescription:action.payload.taskDescription,
-                text: action.payload.text,
+                teskName: action.payload.taskName,
                 completed: false,
             })
         localStorage.setItem('todos', JSON.stringify(store.todos))

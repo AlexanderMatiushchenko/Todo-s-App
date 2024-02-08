@@ -2,11 +2,16 @@
     display: flex;
    justify-content: center;
    align-items: center;
+   margin: 1vw;;
     input{
         border: solid 1px rgb(204, 203, 203);
-        border-radius: 10px;
+        border-radius: 12px;
         margin: 1vw;
         padding: 1vw;
+    }
+    input:focus{
+       border-color: rgba(120, 193, 241, 0.856);
+       outline: none;
     }
 
 button{
@@ -18,14 +23,23 @@ button{
     background-color: rgba(120, 193, 241, 0.856);
     cursor: pointer;
     min-width: 44vw;
+    transition: background-color 0.3 ease;
 
+}
+button:hover{
+    background-color:rgba(16, 148, 236, 0.856);
 }
 .timeBlock{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 1vw;
+    gap: 12vw;
+
+    input{
+        cursor: pointer;
+        min-width: 15vw;
+    }
 }
 h3{
     font-size: 2vw;
@@ -35,6 +49,55 @@ h3{
     min-width: 44vw;
 }
 .taskDescriptionInput{
+    border: solid 1px rgb(204, 203, 203);
+    border-radius: 12px;
+    margin: 1vw;
+    padding: 1vw;
     min-width: 44vw;
-    min-height: 30vh;
+    min-height: 20vh;
+    resize: none;
+    padding: 2vw;
+    
+}
+.taskDescriptionInput:focus{
+    outline: none;
+    border-color: rgba(120, 193, 241, 0.856);
+}
+
+
+
+@media screen and (min-width:1024px) {
+
+    
+}
+@media screen and (max-width:412px) {
+.inputBlock{
+    margin-top: 15vw;
+    gap: 2vw;
+
+    h3{
+        font-size: 6vw;
+    }
+    .timeBlock{
+        gap: 8vw;
+    }
+
+    input{
+        min-width: 60vw;
+        min-height: 12vw;
+        font-size: 5vw;
+    }
+    button{
+        min-width: 60vw;
+        min-height: 12vw;
+        font-size: 6vw;
+    }
+    .taskDescriptionInput{
+        min-width: 60vw;
+        min-height: 20vh;
+        
+
+
+    }
+}
 }
