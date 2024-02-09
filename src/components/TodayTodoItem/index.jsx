@@ -1,22 +1,54 @@
 import React from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { useState } from "react";
+import { removeTodo, toggleTodoComplete } from "../store/slices/todoSlice";
+import s from './index.module.css';
 
-function TodayTodoItem(){
+function TodayTodoItem() {
+  const todaysTasks = useSelector((store) => store.todos.todos);
 
-    const todaysTasks= useSelector(store=>store.todos.todos)
+  const today = new Date().toISOString().split('T')[0];
+  const todayFilteredTasks = todaysTasks.filter((task) => task.deadLineDate === today);
 
-    return(
-        <>
+  const [displayedTasks, setDisplayedTasks] = useState('3');
+
+  const handleSeeAllTasks = () => {
+    setDisplayedTasks(todayFilteredTasks.length);
+  };
+
+  const dispatch = useDispatch();
+  const removeTask = (taskId) => dispatch(removeTodo({ id: taskId }));
+  const toggleTask = (taskId, complete) => dispatch(toggleTodoComplete({ id: taskId, complete }));
+
+  return (
+    <>
+      <div>
         <span>
-            <h2>Today’s Task</h2>
-            <button>See all</button>
+          <h2>Today’s Task</h2>
+          <button onClick={handleSeeAllTasks}>See all</button>
         </span>
         <div>
-            <div>
-                {todaysTasks.map((el)=>el.text)},
+          {todayFilteredTasks.slice(0, displayedTasks).map((task) => (
+            <div key={task.id} className="todaytask">
+              <h3>{task.taskName}</h3>
+              <span className={s.delete} onClick={() => removeTask(task.id)}>
+                &times;
+              </span>
+              <input
+                type="checkbox"
+                checked={task.complete}
+                onChange={() => toggleTask(task.id, task.complete)}
+              />
+              <span>
+                <p>{task.taskStartTime}</p>
+                <p>{task.taskEndTime}</p>
+              </span>
             </div>
+          ))}
         </div>
-        </>
-    )
+      </div>
+    </>
+  );
+}
 
-}export default TodayTodoItem;
+export default TodayTodoItem;

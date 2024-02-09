@@ -14,7 +14,7 @@ const todoSlice=createSlice({
                 taskStartTime: action.payload.taskStartTime,
                 taskEndTime: action.payload.taskEndTime,
                 taskDescription:action.payload.taskDescription,
-                teskName: action.payload.taskName,
+                taskName: action.payload.taskName,
                 completed: false,
             })
         localStorage.setItem('todos', JSON.stringify(store.todos))

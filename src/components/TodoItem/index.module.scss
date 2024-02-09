@@ -1,13 +1,8 @@
-li{
-    display: flex;
-    justify-content: baseline;
-    align-items:center;
-    gap: 2vw;
-  list-style: none;
+
   input:checked + span{
     text-decoration: line-through;
 
-  }
+  
 }
 .delete{
     color: red;

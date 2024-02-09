@@ -6,7 +6,7 @@ function TodoItem({id,text,complete}){
 const dispatch = useDispatch();
 const removeTask= ()=> dispatch(removeTodo({id}))
 const toggleTask = ()=>dispatch(toggleTodoComplete({id}))
-console.log({complete});
+
 
 return(
     <li>
