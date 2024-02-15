@@ -49,8 +49,8 @@ function Input() {
         className={s.taskDescriptionInput}
         value={taskDescription}
         onChange={(e) => setTaskDescription(e.target.value)}
-        minRows={3} // Минимальное количество строк
-        maxRows={6} // Максимальное количество строк
+        minRows={3} 
+        maxRows={6}   
       />
       <button onClick={addTask}>Create Task</button>
     </div>

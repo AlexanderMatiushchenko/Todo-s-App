@@ -5,10 +5,11 @@ import TodoItem from "../TodoItem";
 
 
 function Main(){
-    const todayTask=useSelector(store=>store.todos.todos)
-console.log(...todayTask);
+    // const todayTask=useSelector(store=>store.todos.todos)
+
     return(
         <>
+        
         <TodayTodoItem />
         {/* <div><h3>Today’s progress summery</h3>
         <p>2 Tasks</p>

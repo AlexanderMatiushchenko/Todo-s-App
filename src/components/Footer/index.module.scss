@@ -1,0 +1,24 @@
+.footerContainer{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(9, 22, 214, 0.993);
+    gap: 1vw;
+}
+.leftContainer{
+    display: flex;
+    flex-direction: row;
+    font-size: 3vw;
+    color: white;
+    
+}
+.addTask{
+    font-size: 5vw;
+    padding: 1vw;
+    color: white;
+}
+.rightContainer{
+    display: flex;
+    flex-direction: row;
+    font-size: 3vw;
+    color: white;
+}
