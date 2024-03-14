@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Icon } from "@iconify/react";
 import { useDispatch, useSelector } from "react-redux";
 import { addNote, removeNote } from "../store/slices/notes";
+import s from "./index.module.css"
 
 function Notes() {
   const [noteDescription, setNoteDescription] = useState('');
@@ -31,13 +32,17 @@ function Notes() {
         onChange={(e) => setNoteDescription(e.target.value)}
       />
       <button onClick={handleAddNote}>Add</button>
-
-      <div>
+      
+      <div className={s.container}>
         {notes.map((el) => (
-          <div key={el.id}>
-            {el.noteDescription}
+        
+          <div className={s.containerWithTasks} key={el.id}>
+           <p>
+            {el.note}
+          </p>
             <button onClick={() => handleRemoveNote(el.id)}>&times;</button>
           </div>
+          
         ))}
       </div>
     </div>

@@ -6,3 +6,7 @@ input:checked + span {
   color: red;
   cursor: pointer;
 }
+
+input {
+  border-radius: 6px;
+}

@@ -1,0 +1,19 @@
+
+.container{
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;  
+  
+  
+}
+.containerWithTasks{
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    justify-content: center;
+    align-items: center;
+    p{
+    max-width: 15vw;
+    word-wrap: break-word;
+}
+}
