@@ -21,18 +21,16 @@ function Notes() {
 
   return (
     <div>
+      <div className={s.containerWithInputAndButton}>
       <h2>Notes</h2>
-
-      <button>
-        <Icon icon="heroicons:pencil-square" />
-      </button>
+      <Icon icon="zondicons:add-solid"  style={{color: '#46DDDD'}} />
       <input
         type="text"
         value={noteDescription}
         onChange={(e) => setNoteDescription(e.target.value)}
       />
       <button onClick={handleAddNote}>Add</button>
-      
+      </div>
       <div className={s.container}>
         {notes.map((el) => (
         
@@ -40,9 +38,14 @@ function Notes() {
            <p>
             {el.note}
           </p>
-            <button onClick={() => handleRemoveNote(el.id)}>&times;</button>
+          <div className={s.notesButtons}>
+          <button>
+        <Icon icon="heroicons:pencil-square" />
+      </button>
+      
+            <button className={s.closeButton} onClick={() => handleRemoveNote(el.id)}>&times;</button>
           </div>
-          
+          </div>
         ))}
       </div>
     </div>

@@ -7,9 +7,14 @@
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 1vw;
+  padding: 2vw;
 }
 
 .containerWithTasks {
+  background-color: rgb(70, 221, 221);
+  border-radius: 8px;
+  color: whitesmoke;
+  padding: 1vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17,15 +22,48 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  gap: 2vw;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  gap: 1vw;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  min-width: 30vw;
 }
 .containerWithTasks p {
-  max-width: 15vw;
+  max-width: 20vw;
   word-wrap: break-word;
+}
+
+.notesButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 1vw;
+}
+.notesButtons button {
+  border: none;
+  cursor: pointer;
+  background-color: rgb(70, 221, 221);
+  font-size: 2vw;
+}
+.notesButtons button:hover {
+  color: whitesmoke;
+}
+
+.containerWithInputAndButton {
+  min-width: 30vw;
+}
+.containerWithInputAndButton input {
+  min-width: 30vw;
+  border: none;
+}
+
+.iconAddNote {
+  background-color: rgb(70, 221, 221);
 }
