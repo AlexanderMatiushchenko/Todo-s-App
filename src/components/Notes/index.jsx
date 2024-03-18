@@ -1,12 +1,17 @@
 import React, { useState } from "react";
 import { Icon } from "@iconify/react";
 import { useDispatch, useSelector } from "react-redux";
-import { addNote, removeNote } from "../store/slices/notes";
+import { addNote, editNote, removeNote } from "../store/slices/notes";
 import s from "./index.module.css"
+
 
 function Notes() {
   const [noteDescription, setNoteDescription] = useState('');
   const notes = useSelector((store) => store.notes.note);
+
+  const [editNoteId, setEditNoteId] = useState(null);
+  const [editNoteText, setEditNoteText] = useState('');
+
 
   const dispatch = useDispatch();
 
@@ -19,32 +24,59 @@ function Notes() {
     dispatch(removeNote({ id }));
   };
 
+  const handleEditNote = (id, noteText) => {
+    setEditNoteId(id);
+    setEditNoteText(noteText);
+  };
+
+  const handleUpdateNote = () => {
+    dispatch(editNote({ id: editNoteId, updatedNote: editNoteText }));
+    setEditNoteId(null);
+    setEditNoteText('');
+  };
+
+ 
+  
+  
+
   return (
     <div>
       <div className={s.containerWithInputAndButton}>
-      <h2>Notes</h2>
-      <Icon icon="zondicons:add-solid"  style={{color: '#46DDDD'}} />
-      <input
-        type="text"
-        value={noteDescription}
-        onChange={(e) => setNoteDescription(e.target.value)}
-      />
-      <button onClick={handleAddNote}>Add</button>
+        <h2>Notes</h2>
+        <button onClick={handleAddNote}>
+        <Icon icon="zondicons:add-solid" style={{ color: '#46DDDD' }} />
+        </button>
+        {/* <input
+          type="text"
+          value={noteDescription}
+          onChange={(e) => setNoteDescription(e.target.value)}
+        /> */}
+        
       </div>
       <div className={s.container}>
         {notes.map((el) => (
-        
           <div className={s.containerWithTasks} key={el.id}>
-           <p>
-            {el.note}
-          </p>
-          <div className={s.notesButtons}>
-          <button>
-        <Icon icon="heroicons:pencil-square" />
-      </button>
-      
-            <button className={s.closeButton} onClick={() => handleRemoveNote(el.id)}>&times;</button>
-          </div>
+            <p
+              contentEditable={editNoteId === el.id} 
+              onBlur={handleUpdateNote} 
+              onKeyDown={(e) => { 
+                if (e.key === 'Enter') {
+                  e.preventDefault();
+                  handleUpdateNote();
+                }
+              }}
+              dangerouslySetInnerHTML={{ __html: el.note }}
+            />
+            <div className={s.notesButtons}>
+              {editNoteId !== el.id && ( 
+                <button onClick={() => handleEditNote(el.id, el.note)}>
+                  <Icon icon="heroicons:pencil-square" />
+                </button>
+              )}
+              <button className={s.closeButton} onClick={() => handleRemoveNote(el.id)}>
+                &times;
+              </button>
+            </div>
           </div>
         ))}
       </div>
@@ -53,3 +85,4 @@ function Notes() {
 }
 
 export default Notes;
+
