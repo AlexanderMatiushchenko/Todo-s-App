@@ -1,0 +1,34 @@
+
+  .containerWithNotes{
+    background: rgb(34,193,226);
+    background: linear-gradient(97deg, rgba(34,193,226,0.9051995798319328) 0%, rgba(7,186,190,0.6362920168067228) 100%);
+    border-radius: 8px;
+    color: whitesmoke;
+    padding: 1vw;
+      display: flex;
+      flex-direction: row;
+      gap: 1vw;
+      justify-content: space-between;
+      align-items: flex-start;
+      min-width: 30vw;
+      p{
+      max-width: 20vw;
+      word-wrap: break-word;
+  }
+  }
+  .notesButtons{
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    
+  button{
+    border: none;
+    cursor: pointer;
+    background:none;
+  font-size: 2vw;
+  }
+  button:hover{
+    color: whitesmoke;
+  }
+  }
+  

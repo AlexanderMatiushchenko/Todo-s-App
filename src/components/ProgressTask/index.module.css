@@ -1,0 +1,12 @@
+.containerProgressTask {
+  background: rgb(7, 186, 190);
+  background: linear-gradient(97deg, rgba(7, 186, 190, 0.2329306723) 0%, rgb(34, 193, 226) 100%);
+  border-radius: 8px;
+  padding: 2vw;
+  font-size: 2vw;
+  margin: 2vw;
+  color: white;
+}
+.containerProgressTask h2 {
+  font-size: 3vw;
+}

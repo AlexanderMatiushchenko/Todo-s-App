@@ -1,0 +1,46 @@
+.containerWithNotes {
+  background: rgb(34, 193, 226);
+  background: linear-gradient(97deg, rgba(34, 193, 226, 0.9051995798) 0%, rgba(7, 186, 190, 0.6362920168) 100%);
+  border-radius: 8px;
+  color: whitesmoke;
+  padding: 1vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 1vw;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  min-width: 30vw;
+}
+.containerWithNotes p {
+  max-width: 20vw;
+  word-wrap: break-word;
+}
+
+.notesButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 1vw;
+}
+.notesButtons button {
+  border: none;
+  cursor: pointer;
+  background: none;
+  font-size: 2vw;
+}
+.notesButtons button:hover {
+  color: whitesmoke;
+}

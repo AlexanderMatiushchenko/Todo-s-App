@@ -8,40 +8,9 @@
 }
 h2{
   color:gainsboro;
-  font-size: 4vw;
+  font-size: 6vw;
 }
-.containerWithTasks{
-  background-color: rgb(70, 221, 221);
-  border-radius: 8px;
-  color: whitesmoke;
-  padding: 1vw;
-    display: flex;
-    flex-direction: row;
-    gap: 1vw;
-    justify-content: space-between;
-    align-items: flex-start;
-    min-width: 30vw;
-    p{
-    max-width: 20vw;
-    word-wrap: break-word;
-}
-}
-.notesButtons{
-  display: flex;
-  flex-direction: row;
-  gap: 1vw;
-  
 
-button{
-  border: none;
-  cursor: pointer;
-  background-color: rgb(70, 221, 221);
-font-size: 2vw;
-}
-button:hover{
-  color: whitesmoke;
-}
-}
 .containerWithInputAndButton{
   min-width: 30vw;
   input{
@@ -49,6 +18,17 @@ button:hover{
     border: none;
   }
 }
-.iconAddNote{
-  background-color: rgb(70, 221, 221);
+.addNoteBtn{
+  border: none;
+  background: none;
+  font-size: 6vw;
+  color: rgb(70, 221, 221);
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
 }
+.addNoteBtn:hover{
+  color: rgb(92, 219, 166);
+  
+}
+ 

@@ -8,15 +8,21 @@ import Footer from './components/Footer';
 import Notes from './components/Notes';
 
 
+
+
+
+
 function App() {
   return (
+  
     <div className="App">
       {/* <Main /> */}
       {/* <Footer /> */}
       <Notes />
-     {/* <Input /> */}
+   {/* <Input /> */}
      {/* <TodoListe /> */}
     </div>
+   
   );
 }
 

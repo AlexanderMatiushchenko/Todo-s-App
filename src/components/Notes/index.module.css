@@ -12,53 +12,7 @@
 
 h2 {
   color: gainsboro;
-  font-size: 4vw;
-}
-
-.containerWithTasks {
-  background-color: rgb(70, 221, 221);
-  border-radius: 8px;
-  color: whitesmoke;
-  padding: 1vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  gap: 1vw;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  min-width: 30vw;
-}
-.containerWithTasks p {
-  max-width: 20vw;
-  word-wrap: break-word;
-}
-
-.notesButtons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  gap: 1vw;
-}
-.notesButtons button {
-  border: none;
-  cursor: pointer;
-  background-color: rgb(70, 221, 221);
-  font-size: 2vw;
-}
-.notesButtons button:hover {
-  color: whitesmoke;
+  font-size: 6vw;
 }
 
 .containerWithInputAndButton {
@@ -69,6 +23,16 @@ h2 {
   border: none;
 }
 
-.iconAddNote {
-  background-color: rgb(70, 221, 221);
+.addNoteBtn {
+  border: none;
+  background: none;
+  font-size: 6vw;
+  color: rgb(70, 221, 221);
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.addNoteBtn:hover {
+  color: rgb(92, 219, 166);
 }
