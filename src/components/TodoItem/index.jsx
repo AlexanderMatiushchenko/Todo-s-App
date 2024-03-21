@@ -10,13 +10,14 @@ const toggleTask = ()=>dispatch(toggleTodoComplete({id}))
 
 
 return(
-    <div> 
-    <li>
+    <div className={s.containerTodoItem}> 
+   
         <input type="checkbox" checked={completed} onChange={toggleTask} />
+        < div className={s.todoItemContainerWIthSpanAndCheckbox}>
         <span>{taskName}</span>
     <span className={s.delete} onClick={removeTask}>&times;</span>
-    </li>
     
+    </div>
     </div>
 )
 }

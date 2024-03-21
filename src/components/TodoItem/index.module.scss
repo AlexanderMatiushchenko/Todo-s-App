@@ -1,13 +1,30 @@
+.containerTodoItem{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1vw;
+  min-width: 32vw;
 
+}
   input:checked + span{
     text-decoration: line-through;
 
   
 }
 .delete{
-    color: red;
+    color:black;
+    font-weight: 700;
     cursor: pointer;
 }
-input{
-  border-radius: 6px;
+.delete:hover{
+  color:rgba(34,193,226,1);
+}
+.todoItemContainerWIthSpanAndCheckbox{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1vw;
+  min-width: 30vw;
 }

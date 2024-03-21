@@ -1,12 +1,49 @@
+.containerTodoItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 1vw;
+  min-width: 32vw;
+}
+
 input:checked + span {
   text-decoration: line-through;
 }
 
 .delete {
-  color: red;
+  color: black;
+  font-weight: 700;
   cursor: pointer;
 }
 
-input {
-  border-radius: 6px;
+.delete:hover {
+  color: rgb(34, 193, 226);
+}
+
+.todoItemContainerWIthSpanAndCheckbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 1vw;
+  min-width: 30vw;
 }

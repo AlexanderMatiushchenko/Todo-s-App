@@ -9,12 +9,14 @@
       -ms-flex-align: center;
           align-items: center;
   margin: 1vw;
+  max-width: 35vw;
 }
 .inputBlock input {
   border: solid 1px rgb(204, 203, 203);
   border-radius: 12px;
   margin: 1vw;
   padding: 1vw;
+  max-width: 35vw;
 }
 .inputBlock input:focus {
   border-color: rgba(120, 193, 241, 0.856);
@@ -28,7 +30,7 @@
   font-size: 2vw;
   background-color: rgba(120, 193, 241, 0.856);
   cursor: pointer;
-  min-width: 44vw;
+  min-width: 35vw;
   -webkit-transition: background-color 0.3 ease;
   transition: background-color 0.3 ease;
 }
@@ -46,29 +48,39 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 12vw;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-width: 35vw;
 }
 .inputBlock .timeBlock input {
   cursor: pointer;
-  min-width: 15vw;
+  min-width: 10vw;
+  border: none;
+  background-color: rgba(131, 190, 226, 0.856);
+  color: whitesmoke;
+  -webkit-transition: background-color 0.3 ease;
+  transition: background-color 0.3 ease;
+}
+.inputBlock .timeBlock input:hover {
+  background-color: rgba(16, 148, 236, 0.856);
 }
 .inputBlock h3 {
   font-size: 2vw;
 }
 
 .weidInput {
-  min-width: 44vw;
+  min-width: 35vw;
 }
 
 .taskDescriptionInput {
-  border: solid 1px rgb(204, 203, 203);
+  border: none;
+  background-color: rgba(131, 190, 226, 0.856);
+  color: whitesmoke;
   border-radius: 12px;
   margin: 1vw;
   padding: 1vw;
-  min-width: 44vw;
+  min-width: 35vw;
   min-height: 20vh;
   resize: none;
   padding: 2vw;
@@ -76,7 +88,8 @@
 
 .taskDescriptionInput:focus {
   outline: none;
-  border-color: rgba(120, 193, 241, 0.856);
+  border: none;
+  background-color: rgba(16, 148, 236, 0.856);
 }
 
 @media screen and (max-width: 412px) {

@@ -1,0 +1,21 @@
+.containerTodoList{
+    gap: 0.5vw;
+    h2{
+        font-size: 4vw;
+    }
+    button{
+        border: none;
+        border-radius: 6px;
+        background: linear-gradient(97deg, rgba(7,186,190,0.2329306722689075) 0%, rgba(34,193,226,1) 100%);
+        cursor: pointer;
+        color: rgb(73, 72, 72);
+        min-width: 10vw;
+        min-height: 3vw;
+        padding: 1vw;
+    }
+    button:hover{
+        
+        color:white;
+        
+    }
+}
