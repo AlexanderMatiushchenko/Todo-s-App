@@ -16,10 +16,10 @@ function App() {
   return (
   
     <div className="App">
-      {/* <Main /> */}
+      <Main />
       {/* <Footer /> */}
       {/* <Notes /> */}
-   <Input />
+   {/* <Input /> */}
      {/* <TodoListe /> */}
     </div>
    

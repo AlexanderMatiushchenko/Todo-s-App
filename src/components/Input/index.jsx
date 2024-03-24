@@ -33,12 +33,12 @@ function Input() {
       <input className={s.weidInput} type="date" value={taskDeadLineDate} onChange={(e)=>setTaskDeadLineDate(e.target.value)}/>
      
       <div className={s.timeBlock}>
-        <div className={s}>
-        <h3>Start Time</h3>
+        <div>
+        <h3>Start</h3>
       <input type="time" value={taskStartTime} onChange={(e)=>setTaskStartTime(e.target.value)}/>
       </div>
       <div>
-      <h3>End Time</h3>
+      <h3>End</h3>
       <input type="time" value={taskEndTime} onChange={(e)=>setTaskEndTime(e.target.value)} />
       </div>
       </div>

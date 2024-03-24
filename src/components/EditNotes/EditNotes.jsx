@@ -42,7 +42,7 @@ function EditNotes({ el, handleRemoveNote }) {
           </button>
         )}
         <button className={s.closeButton} onClick={() => handleRemoveNote(el.id)}>
-          &times;
+        <Icon icon="ic:outline-delete" />
         </button>
       </div>
     </div>

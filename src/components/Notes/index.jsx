@@ -1,4 +1,4 @@
-// Notes.js
+
 import React, { useState } from "react";
 import { Icon } from "@iconify/react";
 import { useDispatch, useSelector } from "react-redux";

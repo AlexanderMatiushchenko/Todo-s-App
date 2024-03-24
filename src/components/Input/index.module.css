@@ -12,30 +12,36 @@
   max-width: 35vw;
 }
 .inputBlock input {
-  border: solid 1px rgb(204, 203, 203);
+  border: none;
+  outline: none;
+  background-color: rgb(120, 220, 240);
   border-radius: 12px;
   margin: 1vw;
   padding: 1vw;
   max-width: 35vw;
+  cursor: pointer;
 }
 .inputBlock input:focus {
-  border-color: rgba(120, 193, 241, 0.856);
-  outline: none;
+  background-color: rgb(34, 193, 226);
+  color: whitesmoke;
+}
+.inputBlock input:hover {
+  background-color: rgb(34, 193, 226);
 }
 .inputBlock button {
   padding: 1vw;
-  border-radius: 10px;
+  border-radius: 12px;
   border: solid 1px rgb(204, 203, 203);
   color: white;
   font-size: 2vw;
-  background-color: rgba(120, 193, 241, 0.856);
+  background-color: rgb(120, 220, 240);
   cursor: pointer;
   min-width: 35vw;
   -webkit-transition: background-color 0.3 ease;
   transition: background-color 0.3 ease;
 }
 .inputBlock button:hover {
-  background-color: rgba(16, 148, 236, 0.856);
+  background-color: rgb(34, 193, 226);
 }
 .inputBlock .timeBlock {
   display: -webkit-box;
@@ -54,16 +60,15 @@
   min-width: 35vw;
 }
 .inputBlock .timeBlock input {
-  cursor: pointer;
   min-width: 10vw;
   border: none;
-  background-color: rgba(131, 190, 226, 0.856);
+  background-color: rgb(120, 220, 240);
   color: whitesmoke;
   -webkit-transition: background-color 0.3 ease;
   transition: background-color 0.3 ease;
 }
 .inputBlock .timeBlock input:hover {
-  background-color: rgba(16, 148, 236, 0.856);
+  background-color: rgb(34, 193, 226);
 }
 .inputBlock h3 {
   font-size: 2vw;
@@ -71,25 +76,30 @@
 
 .weidInput {
   min-width: 35vw;
+  color: whitesmoke;
 }
 
 .taskDescriptionInput {
   border: none;
-  background-color: rgba(131, 190, 226, 0.856);
+  background-color: rgb(120, 220, 240);
   color: whitesmoke;
   border-radius: 12px;
+  outline: none;
+  border: none;
   margin: 1vw;
-  padding: 1vw;
   min-width: 35vw;
   min-height: 20vh;
   resize: none;
-  padding: 2vw;
+  padding: 1vw;
 }
 
 .taskDescriptionInput:focus {
-  outline: none;
-  border: none;
-  background-color: rgba(16, 148, 236, 0.856);
+  background-color: rgb(34, 193, 226);
+}
+
+.taskDescriptionInput:hover {
+  cursor: pointer;
+  background-color: rgb(34, 193, 226);
 }
 
 @media screen and (max-width: 412px) {
