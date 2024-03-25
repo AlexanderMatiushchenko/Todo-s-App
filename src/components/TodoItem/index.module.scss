@@ -7,16 +7,15 @@
   border-radius: 8px;
   padding: 1vw;
   gap: 1vw;
-  min-width: 33vw;
+  min-width: 35vw;
   overflow-wrap: anywhere;
+  max-width: 35gitvw;
   p{
     color: whitesmoke;
   }
 }
-  input:checked + span{
+  input:checked + p{
     text-decoration: line-through;
-
-  
 }
 .deleteIcon{
     color:black;

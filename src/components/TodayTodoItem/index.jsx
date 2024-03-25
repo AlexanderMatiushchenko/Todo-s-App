@@ -14,7 +14,7 @@ function  TodayTodoItem() {
   const todayFilteredTasks = todaysTasks.filter((task) => task.deadLineDate === today);
 
   const [displayedTasks, setDisplayedTasks] = useState('3');
-  const [showedDescription, setshowedDescription] = useState(null);;
+  const [showedDescription, setshowedDescription] = useState(null);
 
   const handleSeeAllTasks = () => {
     setDisplayedTasks(todayFilteredTasks.length);
