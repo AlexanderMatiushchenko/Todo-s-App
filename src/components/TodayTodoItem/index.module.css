@@ -23,7 +23,7 @@ input:checked + span {
   min-width: 35vw;
 }
 .containerWithBtnSeeAllTodaTasks h2 {
-  font-size: 2gitvw;
+  font-size: 2vw;
   color: black;
 }
 .containerWithBtnSeeAllTodaTasks h3 {
@@ -118,6 +118,7 @@ input:checked + span {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  gap: 1vw;
   max-width: 15vw;
 }
 
@@ -129,6 +130,7 @@ input:checked + span {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  gap: 1vw;
 }
 
 .deleteIcon {

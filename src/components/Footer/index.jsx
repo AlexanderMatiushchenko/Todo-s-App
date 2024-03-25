@@ -12,7 +12,7 @@ function Footer(){
 
 <Icon icon="tabler:notes" />
 </div>
-<div className={s.addTask}><Icon icon="mingcute:home-3-fill" /></div>
+<div className={s.home}><Icon icon="mingcute:home-3-fill" /></div>
 
 <div className={s.rightContainer}>
 <Icon icon="heroicons:pencil-square" />

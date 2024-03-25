@@ -3,22 +3,28 @@
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
+  background:linear-gradient(201deg, rgba(7,186,190,0.2329306722689075) 0%, rgba(34,193,226,1) 100%);
+  border-radius: 8px;
+  padding: 1vw;
   gap: 1vw;
-  min-width: 32vw;
-
+  min-width: 33vw;
+  overflow-wrap: anywhere;
+  p{
+    color: whitesmoke;
+  }
 }
   input:checked + span{
     text-decoration: line-through;
 
   
 }
-.delete{
+.deleteIcon{
     color:black;
     font-weight: 700;
     cursor: pointer;
 }
-.delete:hover{
-  color:rgba(34,193,226,1);
+.deleteIcon:hover{
+  color:whitesmoke;
 }
 .todoItemContainerWIthSpanAndCheckbox{
   display: flex;

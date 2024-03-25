@@ -1,24 +1,42 @@
 .footerContainer{
     display: flex;
     flex-direction: row;
-    background-color: rgb(70, 221, 221);
+    justify-content: space-around;
+    background-color:whitesmoke;
+ margin-top: 1vw;
+    min-width: 35vw;
+    border-radius: 8px;
     gap: 1vw;
+    
+
+        
 }
 .leftContainer{
     display: flex;
     flex-direction: row;
-    font-size: 3vw;
-    color: white;
-    
+    font-size: 4vw;
+    color: rgba(34,193,226,1);
+    cursor: pointer; 
 }
-.addTask{
+.leftContainer:hover{
+    color: rgb(31, 100, 114);
+}
+.home{
     font-size: 5vw;
     padding: 1vw;
-    color: white;
+    color: rgba(34,193,226,1);
+    cursor: pointer;
+}
+.home:hover{
+    color: rgb(31, 100, 114);
 }
 .rightContainer{
     display: flex;
     flex-direction: row;
-    font-size: 3vw;
-    color: white;
+    font-size: 4vw;
+    color:  rgba(34,193,226,1);
+    cursor: pointer;
+}
+.rightContainer:hover{
+    color:rgb(31, 100, 114);;
 }

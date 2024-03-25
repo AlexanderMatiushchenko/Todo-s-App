@@ -1,6 +1,5 @@
 .containerWithNotes {
-  background: rgb(34, 193, 226);
-  background: linear-gradient(97deg, rgba(34, 193, 226, 0.9051995798) 0%, rgba(7, 186, 190, 0.6362920168) 100%);
+  background: linear-gradient(200deg, rgba(7, 186, 190, 0.2329306723) 0%, rgb(34, 193, 226) 100%);
   border-radius: 8px;
   color: whitesmoke;
   padding: 1vw;
@@ -18,10 +17,10 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  min-width: 30vw;
+  min-width: 35vw;
 }
 .containerWithNotes p {
-  max-width: 20vw;
+  max-width: 25vw;
   word-wrap: break-word;
 }
 

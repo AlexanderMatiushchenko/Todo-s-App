@@ -1,7 +1,8 @@
 
 import { useDispatch} from "react-redux"
 import { removeTodo,toggleTodoComplete } from "../store/slices/todoSlice";
-import s from './index.module.css'
+import s from './index.module.css';
+import { Icon } from "@iconify/react";
 
 function TodoItem({id,taskName,completed}){
 const dispatch = useDispatch();
@@ -14,8 +15,9 @@ return(
    
         <input type="checkbox" checked={completed} onChange={toggleTask} />
         < div className={s.todoItemContainerWIthSpanAndCheckbox}>
-        <span>{taskName}</span>
-    <span className={s.delete} onClick={removeTask}>&times;</span>
+        <p>{taskName}</p>
+        <Icon onClick={removeTask} className={s.deleteIcon} icon="ic:outline-delete" />
+    {/* <span className={s.delete} onClick={removeTask}>&times;</span> */}
     
     </div>
     </div>

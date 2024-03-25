@@ -16,10 +16,10 @@ h2 {
 }
 
 .containerWithInputAndButton {
-  min-width: 30vw;
+  min-width: 35vw;
 }
 .containerWithInputAndButton input {
-  min-width: 30vw;
+  min-width: 35vw;
   border: none;
 }
 
@@ -27,12 +27,12 @@ h2 {
   border: none;
   background: none;
   font-size: 6vw;
-  color: rgb(70, 221, 221);
+  color: rgb(34, 193, 226);
   margin: 0;
   padding: 0;
   cursor: pointer;
 }
 
 .addNoteBtn:hover {
-  color: rgb(92, 219, 166);
+  color: rgb(31, 100, 114);
 }
