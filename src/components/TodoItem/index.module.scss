@@ -1,15 +1,15 @@
-.containerTodoItem{
+.containerTodoItemMain{
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
   background:linear-gradient(201deg, rgba(7,186,190,0.2329306722689075) 0%, rgba(34,193,226,1) 100%);
   border-radius: 8px;
   padding: 1vw;
   gap: 1vw;
   min-width: 35vw;
   overflow-wrap: anywhere;
-  max-width: 35gitvw;
+  max-width: 35vw;
   p{
     color: whitesmoke;
   }
@@ -17,14 +17,39 @@
   input:checked + p{
     text-decoration: line-through;
 }
+.containerTodoItem{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 33vw;
+}
+.todoItemLeft{
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+  max-width:25vw;
+
+}
+.todoItemRight{
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+ 
+}
 .deleteIcon{
-    color:black;
-    font-weight: 700;
-    cursor: pointer;
+  cursor: pointer;
 }
 .deleteIcon:hover{
-  color:whitesmoke;
+color: whitesmoke;
 }
+.iconDescription{
+  cursor: pointer;
+}
+.iconDescription:hover{
+  color: whitesmoke;
+}
+
 .todoItemContainerWIthSpanAndCheckbox{
   display: flex;
   flex-direction: row;
@@ -32,4 +57,8 @@
   justify-content: space-between;
   gap: 1vw;
   min-width: 30vw;
+}
+.textDescription{
+  
+
 }

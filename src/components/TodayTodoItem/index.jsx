@@ -56,7 +56,6 @@ function  TodayTodoItem() {
                 ) : (
                   <Icon icon="system-uicons:chevron-down" />
                 )}
-
               </span>
               <span>
                 <p>{task.taskStartTime}</p>

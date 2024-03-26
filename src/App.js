@@ -18,9 +18,9 @@ function App() {
     <div className="App">
       {/* <Main /> */}
       
-      {/* <Notes /> */}
+      <Notes />
    {/* <Input /> */}
-     <TodoListe />
+     {/* <TodoListe /> */}
      <Footer />
     </div>
    

@@ -19,7 +19,7 @@ h2 {
   min-width: 35vw;
 }
 .containerWithInputAndButton input {
-  min-width: 35vw;
+  min-width: 100%;
   border: none;
 }
 
@@ -35,4 +35,11 @@ h2 {
 
 .addNoteBtn:hover {
   color: rgb(31, 100, 114);
+}
+
+p:focus {
+  outline: none;
+  background: rgb(22, 188, 221);
+  border-radius: 8px;
+  padding: 1vw;
 }

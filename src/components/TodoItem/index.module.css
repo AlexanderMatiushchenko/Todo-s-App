@@ -1,3 +1,32 @@
+.containerTodoItemMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background: linear-gradient(201deg, rgba(7, 186, 190, 0.2329306723) 0%, rgb(34, 193, 226) 100%);
+  border-radius: 8px;
+  padding: 1vw;
+  gap: 1vw;
+  min-width: 35vw;
+  overflow-wrap: anywhere;
+  max-width: 35vw;
+}
+.containerTodoItemMain p {
+  color: whitesmoke;
+}
+
+input:checked + p {
+  text-decoration: line-through;
+}
+
 .containerTodoItem {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9,32 +38,48 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  background: linear-gradient(201deg, rgba(7, 186, 190, 0.2329306723) 0%, rgb(34, 193, 226) 100%);
-  border-radius: 8px;
-  padding: 1vw;
-  gap: 1vw;
-  min-width: 35vw;
-  overflow-wrap: anywhere;
-  max-width: 35gitvw;
-}
-.containerTodoItem p {
-  color: whitesmoke;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-width: 33vw;
 }
 
-input:checked + p {
-  text-decoration: line-through;
+.todoItemLeft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 1vw;
+  max-width: 25vw;
+}
+
+.todoItemRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 1vw;
 }
 
 .deleteIcon {
-  color: black;
-  font-weight: 700;
   cursor: pointer;
 }
 
 .deleteIcon:hover {
+  color: whitesmoke;
+}
+
+.iconDescription {
+  cursor: pointer;
+}
+
+.iconDescription:hover {
   color: whitesmoke;
 }
 

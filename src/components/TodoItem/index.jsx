@@ -17,26 +17,28 @@ const toggleDescription = (id)=>{
 }
 
 return(
-    <div className={s.containerTodoItem}> 
-        
-        <div className={s.todoItemContainerWIthSpanAndCheckbox}>
+    <div className={s.containerTodoItemMain}>
+      <div className={s.containerTodoItem}>
+        <div className={s.todoItemLeft}>
         <input type="checkbox" checked={completed} onChange={()=> toggleTask(id,completed)} />
         <p>{taskName}</p>
-        <div>
-             {showedDescription === id && <p>{taskDescription}</p>}
-             </div>
+        </div>
+        <div className={s.todoItemRight}>
              <span className={s.iconDescription} onClick={()=>toggleDescription(id) }>
               {showedDescription === id ? (
                   <Icon icon="system-uicons:chevron-up" />
                 ) : (
                   <Icon icon="system-uicons:chevron-down" />
                 )}
-
               </span>
         <Icon onClick={removeTask} className={s.deleteIcon} icon="ic:outline-delete" />
     {/* <span className={s.delete} onClick={removeTask}>&times;</span> */}
     
     </div>
+    </div>
+    <div className={s.textDescription}>
+             {showedDescription === id && <p>{taskDescription}</p>}
+             </div>
     </div>
 )
 }
