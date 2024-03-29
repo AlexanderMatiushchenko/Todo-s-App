@@ -7,7 +7,7 @@
   font-family: "Lato";
 }
 
-div {
+.App {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

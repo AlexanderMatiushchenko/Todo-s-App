@@ -15,6 +15,16 @@
       word-wrap: break-word;
   }
   }
+  .notesInput:focus{
+    
+      outline: none;
+      background:  rgb(22, 188, 221);
+      border-radius: 8px;
+      padding: 1vw;
+    
+     
+  }
+   
   .notesButtons{
     display: flex;
     flex-direction: row;

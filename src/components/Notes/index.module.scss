@@ -14,6 +14,9 @@ h2{
 
 .containerWithInputAndButton{
   min-width: 35vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   input{
     min-width: 100%;
     border: none;   
@@ -33,10 +36,3 @@ h2{
   
 }
 
-p:focus{
-  outline: none;
-  background:  rgb(22, 188, 221);
-  border-radius: 8px;
-  padding: 1vw;
-}
- 

@@ -1,9 +1,11 @@
 .inputBlock{
     display: flex;
+    flex-direction: column;
    justify-content: center;
    align-items: center;
    margin: 1vw;;
    max-width: 35vw;
+ 
     input{
         border:none;
        outline: none;

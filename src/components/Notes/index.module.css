@@ -17,6 +17,16 @@ h2 {
 
 .containerWithInputAndButton {
   min-width: 35vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .containerWithInputAndButton input {
   min-width: 100%;
@@ -35,11 +45,4 @@ h2 {
 
 .addNoteBtn:hover {
   color: rgb(31, 100, 114);
-}
-
-p:focus {
-  outline: none;
-  background: rgb(22, 188, 221);
-  border-radius: 8px;
-  padding: 1vw;
 }

@@ -10,7 +10,7 @@ const notesSlice = createSlice({
         addNote(store,action){
             store.note.push({
                 id:new Date().toString(),
-                note: action.payload.noteDescription,
+                noteText: action.payload.noteDescription,
             })
             localStorage.setItem('note',JSON.stringify(store.note))
         },
@@ -24,7 +24,7 @@ const notesSlice = createSlice({
                return el.id ===id
             });
             if (noteIndex !== -1) {
-                store.note[noteIndex].note = updatedNote;
+                store.note[noteIndex].noteText = updatedNote;
                 localStorage.setItem('note', JSON.stringify(store.note));
             }
             

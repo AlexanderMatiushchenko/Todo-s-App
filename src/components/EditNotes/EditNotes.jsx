@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { Icon } from "@iconify/react";
 import s from "./index.module.css";
@@ -7,7 +6,7 @@ import { editNote } from "../store/slices/notes";
 
 function EditNotes({ el, handleRemoveNote }) {
   const [editNoteId, setEditNoteId] = useState(null);
-  const [editNoteText, setEditNoteText] = useState('');
+  const [editNoteText, setEditNoteText] = useState(el.noteText); 
 
   const dispatch = useDispatch();
 
@@ -19,30 +18,30 @@ function EditNotes({ el, handleRemoveNote }) {
   const handleUpdateNote = () => {
     dispatch(editNote({ id: editNoteId, updatedNote: editNoteText }));
     setEditNoteId(null);
-    setEditNoteText('');
   };
 
   return (
     <div className={s.containerWithNotes}>
-      <p
-        contentEditable={editNoteId === el.id} 
-        onBlur={handleUpdateNote} 
-        onKeyDown={(e) => { 
-          if (e.key === 'Enter') {
-            e.preventDefault();
-            handleUpdateNote();
-          }
-        }}
-        dangerouslySetInnerHTML={{ __html: el.note }}
-      />
+      {editNoteId !== el.id ? (
+        <p>{el.noteText}</p> 
+      ) : (
+        <input
+        className={s.notesInput}
+          type="text"
+          value={editNoteText}
+          onChange={(e) => setEditNoteText(e.target.value)}
+          onBlur={handleUpdateNote}
+          autoFocus
+        />
+      )}
       <div className={s.notesButtons}>
         {editNoteId !== el.id && ( 
-          <button onClick={() => handleEditNote(el.id, el.note)}>
+          <button onClick={() => handleEditNote(el.id, el.noteText)}>
             <Icon icon="heroicons:pencil-square" />
           </button>
         )}
         <button className={s.closeButton} onClick={() => handleRemoveNote(el.id)}>
-        <Icon icon="ic:outline-delete" />
+          <Icon icon="ic:outline-delete" />
         </button>
       </div>
     </div>

@@ -1,6 +1,7 @@
 .footerContainer{
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-around;
     background-color:whitesmoke;
     margin-top: 1vw;
@@ -15,7 +16,7 @@
 }
 
 .home{
-    font-size: 6vw;
+    font-size: 7vw;
     padding: 1vw;
     color: rgba(34,193,226,1);
     cursor: pointer;
