@@ -5,6 +5,9 @@ import { removeTodo, toggleTodoComplete } from "../store/slices/todoSlice";
 import s from './index.module.css';
 import { Icon } from "@iconify/react";
 import ProgressTask from "../ProgressTask";
+import { Link } from "react-router-dom";
+import { url } from "../../utils/var";
+import Input from "../Input";
 
 
 function  TodayTodoItem() {
@@ -36,7 +39,14 @@ function  TodayTodoItem() {
           <h3>{today.split('-').reverse().join('.')}</h3>
           <button className={s.btnSeeAllTodayTask} onClick={handleSeeAllTasks}>See all</button>
         </div>
-        <div className={s.containerAllTodos}>
+        {todayFilteredTasks.length === 0 ? (
+          <><p>You have no tasks for today.</p>
+          <Link to={`${url}/Input`}>
+          <button className={s.btnSeeAllTodayTask} >Add task</button>
+          </Link>
+          </>
+        ):
+        (<div className={s.containerAllTodos}>
           {todayFilteredTasks.slice(0, displayedTasks).map((task) => (
             <div key={task.id} className={s.todaysTask}>
               <div className={s.tasksContainer}>
@@ -65,13 +75,12 @@ function  TodayTodoItem() {
               </div>
               <div>
              {showedDescription === task.id && <p>{task.taskDescription}</p>}
-           
              </div>
               </div>
           ))}
         </div>
+        )}
       </div>
-  
   );
 }
 
