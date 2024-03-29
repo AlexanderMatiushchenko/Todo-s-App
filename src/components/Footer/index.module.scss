@@ -3,29 +3,23 @@
     flex-direction: row;
     justify-content: space-around;
     background-color:whitesmoke;
- margin-top: 1vw;
+    margin-top: 1vw;
     min-width: 35vw;
     border-radius: 8px;
-    gap: 1vw;
-    
-
-        
+    font-size: 5vw;  
 }
 .leftContainer{
     display: flex;
     flex-direction: row;
     font-size: 4vw;
-    color: rgba(34,193,226,1);
-    cursor: pointer; 
 }
-.leftContainer:hover{
-    color: rgb(31, 100, 114);
-}
+
 .home{
-    font-size: 5vw;
+    font-size: 6vw;
     padding: 1vw;
     color: rgba(34,193,226,1);
     cursor: pointer;
+
 }
 .home:hover{
     color: rgb(31, 100, 114);
@@ -34,9 +28,11 @@
     display: flex;
     flex-direction: row;
     font-size: 4vw;
-    color:  rgba(34,193,226,1);
-    cursor: pointer;
 }
-.rightContainer:hover{
-    color:rgb(31, 100, 114);;
+
+a{
+    color:rgba(34,193,226,1);
+}
+a:hover{
+    color: rgb(31, 100, 114);
 }
