@@ -25,8 +25,9 @@
 }
 
 .notesInput:focus {
+  border: none;
   outline: none;
-  background: rgb(22, 188, 221);
+  background: rgb(18, 159, 187);
   border-radius: 8px;
   padding: 1vw;
 }

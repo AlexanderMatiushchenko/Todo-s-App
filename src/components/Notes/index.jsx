@@ -30,7 +30,7 @@ function Notes() {
       <div className={s.containerWithInputAndButton}>
         <h2>Notes</h2>
         {showInput ? ( // Если нужно показать поле ввода
-          <input
+          <input className={s.notesInput}
             type="text"
             value={noteDescription}
             onChange={(e) => setNoteDescription(e.target.value)}
