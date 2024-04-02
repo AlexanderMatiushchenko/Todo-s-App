@@ -37,3 +37,29 @@ a{
 a:hover{
     color: rgb(31, 100, 114);
 }
+@media only screen and (max-width: 1024px) {
+    .footerContainer{
+        min-width: 60vw;
+        margin-top: 4vw;
+        svg{
+            font-size: 10vw;
+        }
+        .homeIcon{
+            font-size: 13vw;
+        }
+    }
+    
+}
+@media only screen and (max-width: 767px) {
+    .footerContainer{
+        min-width: 80vw;
+        margin-top: 6vw;
+        svg{
+            font-size: 12vw;
+        }
+        .homeIcon{
+            font-size: 15vw;
+        }
+        
+    }
+}

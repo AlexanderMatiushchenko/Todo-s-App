@@ -14,6 +14,9 @@
           align-items: center;
   gap: 2vw;
 }
+.mainConateinerTodayTodoItem svg {
+  font-size: 3vw;
+}
 
 input:checked + span {
   text-decoration: line-through;
@@ -54,7 +57,7 @@ input:checked + span {
 .btnSeeAllTodayTask:hover {
   cursor: pointer;
   background-color: rgb(34, 193, 226);
-  color: whitesmoke;
+  color: white;
 }
 
 .containerTodaysTasks {
@@ -92,7 +95,7 @@ input:checked + span {
   overflow-wrap: anywhere;
 }
 .todaysTask p {
-  color: whitesmoke;
+  color: white;
 }
 
 .tasksContainer {
@@ -155,7 +158,7 @@ input:checked + span {
 }
 
 .deleteIcon:hover {
-  color: whitesmoke;
+  color: white;
 }
 
 .iconDescription {
@@ -163,5 +166,69 @@ input:checked + span {
 }
 
 .iconDescription:hover {
-  color: whitesmoke;
+  color: white;
+}
+
+@media only screen and (max-width: 1024px) {
+  .mainConateinerTodayTodoItem svg {
+    font-size: 4vw;
+  }
+  .mainConateinerTodayTodoItem .containerWithBtnSeeAllTodaTasks {
+    min-width: 60vw;
+  }
+  .mainConateinerTodayTodoItem .containerWithBtnSeeAllTodaTasks h2 {
+    font-size: 3.2vw;
+  }
+  .mainConateinerTodayTodoItem .containerWithBtnSeeAllTodaTasks h3 {
+    font-size: 2.5vw;
+  }
+  .mainConateinerTodayTodoItem .btnSeeAllTodayTask {
+    min-width: 15vw;
+  }
+  .mainConateinerTodayTodoItem .todaysTask {
+    min-width: 60vw;
+  }
+  .mainConateinerTodayTodoItem .tasksContainer {
+    min-width: 100%;
+  }
+  .mainConateinerTodayTodoItem .containerAllTodos {
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .mainConateinerTodayTodoItem svg {
+    font-size: 6vw;
+  }
+  .mainConateinerTodayTodoItem .leftContainerTodos {
+    max-width: 60%;
+  }
+  .mainConateinerTodayTodoItem .containerWithBtnSeeAllTodaTasks {
+    min-width: 80vw;
+  }
+  .mainConateinerTodayTodoItem .containerWithBtnSeeAllTodaTasks h2 {
+    font-size: 5vw;
+  }
+  .mainConateinerTodayTodoItem .containerWithBtnSeeAllTodaTasks h3 {
+    font-size: 4vw;
+  }
+  .mainConateinerTodayTodoItem .btnSeeAllTodayTask {
+    min-width: 25vw;
+    font-size: 5vw;
+  }
+  .mainConateinerTodayTodoItem .todaysTask {
+    min-width: 80vw;
+  }
+  .mainConateinerTodayTodoItem .tasksContainer {
+    min-width: 100%;
+  }
+  .mainConateinerTodayTodoItem .containerAllTodos {
+    max-width: 100%;
+  }
+  .mainConateinerTodayTodoItem .todayDescription,
+  .mainConateinerTodayTodoItem .todayTasksTime {
+    font-size: 5vw;
+  }
+  .mainConateinerTodayTodoItem .todayTaskName {
+    font-size: 6vw;
+  }
 }

@@ -58,3 +58,28 @@ a {
 a:hover {
   color: rgb(31, 100, 114);
 }
+
+@media only screen and (max-width: 1024px) {
+  .footerContainer {
+    min-width: 60vw;
+    margin-top: 4vw;
+  }
+  .footerContainer svg {
+    font-size: 10vw;
+  }
+  .footerContainer .homeIcon {
+    font-size: 13vw;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .footerContainer {
+    min-width: 80vw;
+    margin-top: 6vw;
+  }
+  .footerContainer svg {
+    font-size: 12vw;
+  }
+  .footerContainer .homeIcon {
+    font-size: 15vw;
+  }
+}

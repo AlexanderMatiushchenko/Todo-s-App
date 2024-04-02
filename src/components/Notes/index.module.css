@@ -7,7 +7,9 @@
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 1vw;
-  padding: 2vw;
+}
+.container svg {
+  font-size: 3vw;
 }
 
 h2 {
@@ -52,4 +54,47 @@ h2 {
   background: rgb(22, 188, 221);
   border-radius: 8px;
   padding: 1vw;
+}
+
+@media only screen and (max-width: 1024px) {
+  .containerNotesMain {
+    min-width: 60vw;
+  }
+  .containerNotesMain h2 {
+    color: gainsboro;
+    font-size: 12vw;
+  }
+  .containerWithInputAndButton {
+    min-width: 100%;
+  }
+  .containerWithInputAndButton svg {
+    font-size: 10vw;
+  }
+  .container {
+    min-width: 100%;
+  }
+  .container svg {
+    font-size: 5vw;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .containerNotesMain {
+    min-width: 80vw;
+  }
+  .containerNotesMain h2 {
+    color: gainsboro;
+    font-size: 12vw;
+  }
+  .containerWithInputAndButton {
+    min-width: 100%;
+  }
+  .containerWithInputAndButton svg {
+    font-size: 15vw;
+  }
+  .container {
+    min-width: 100%;
+  }
+  .container svg {
+    font-size: 7vw;
+  }
 }

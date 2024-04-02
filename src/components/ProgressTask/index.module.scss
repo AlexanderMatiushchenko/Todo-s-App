@@ -13,5 +13,40 @@
     }
     .progressTaskLine{
         min-width: 100%;
+        font-size: 4vw;
     }
+}
+
+@media only screen and (max-width: 1024px) {
+    .containerProgressTask{
+        min-width: 60vw;
+        padding: 3vw;
+        h2{
+       font-size: 5vw;
+        }
+
+    }
+    .progressLineParagraph{
+        font-size: 4vw;
+    }
+}
+
+
+@media only screen and (max-width: 766px){
+    .containerProgressTask{
+        min-width: 80vw;
+        padding: 3vw;
+        h2{
+       font-size: 7vw;
+        }
+        .progressTaskLine{
+            font-size: 6vw;
+        }
+
+    }
+    .progressLineParagraph{
+        min-width: 80%;
+        font-size: 6vw;
+    }
+
 }

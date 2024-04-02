@@ -14,13 +14,15 @@
   background: linear-gradient(201deg, rgba(7, 186, 190, 0.2329306723) 0%, rgb(34, 193, 226) 100%);
   border-radius: 8px;
   padding: 1vw;
-  gap: 2vw;
   min-width: 35vw;
   overflow-wrap: anywhere;
   max-width: 35vw;
 }
 .containerTodoItemMain p {
-  color: whitesmoke;
+  color: white;
+}
+.containerTodoItemMain svg {
+  font-size: 3vw;
 }
 
 input:checked + p {
@@ -53,7 +55,7 @@ input:checked + p {
       -ms-flex-direction: row;
           flex-direction: row;
   gap: 1vw;
-  max-width: 25vw;
+  max-width: 15vw;
 }
 
 .todoItemRight {
@@ -72,7 +74,7 @@ input:checked + p {
 }
 
 .deleteIcon:hover {
-  color: whitesmoke;
+  color: white;
 }
 
 .iconDescription {
@@ -80,7 +82,7 @@ input:checked + p {
 }
 
 .iconDescription:hover {
-  color: whitesmoke;
+  color: white;
 }
 
 .todoItemContainerWIthSpanAndCheckbox {
@@ -99,4 +101,21 @@ input:checked + p {
           justify-content: space-between;
   gap: 1vw;
   min-width: 30vw;
+}
+
+.containerAllTasks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-width: 33vw;
 }

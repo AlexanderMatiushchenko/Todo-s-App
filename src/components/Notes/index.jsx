@@ -26,16 +26,16 @@ function Notes() {
   };
 
   return (
-    <div>
+    <div className={s.containerNotesMain}>
       <div className={s.containerWithInputAndButton}>
         <h2>Notes</h2>
-        {showInput ? ( // Если нужно показать поле ввода
+        {showInput ? (
           <input className={s.notesInput}
             type="text"
             value={noteDescription}
             onChange={(e) => setNoteDescription(e.target.value)}
             autoFocus
-            onBlur={handleAddNote} // По blur добавляем заметку
+            onBlur ={handleAddNote} 
           />
         ) : (
           <button className={s.addNoteBtn} onClick={handleAddNote}>

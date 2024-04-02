@@ -3,8 +3,8 @@
     flex-direction: column;
    justify-content: center;
    align-items: center;
-   margin: 1vw;;
-   max-width: 35vw;
+   
+   min-width: 35vw;
  
     input{
         border:none;
@@ -94,36 +94,59 @@ h3{
 
 
 
-@media screen and (min-width:1024px) {
-
+@media only screen and (min-width:1024px) {
+    .inputBlock{
+       min-width: 60vw;
+        h3{
+            font-size: 6vw;
+        }
+        .timeBlock{
+            gap: 8vw;
+        }
     
+        input{
+            min-width: 60vw;
+            min-height: 12vw;
+            font-size: 5vw;
+        }
+        button{
+            min-width: 60vw;
+            min-height: 12vw;
+            font-size: 6vw;
+        }
+        .taskDescriptionInput{
+            min-width: 60vw;
+            min-height: 20vh;
+            
+        }
+    }
 }
-@media screen and (max-width:412px) {
-.inputBlock{
-    margin-top: 15vw;
-    gap: 2vw;
+// @media screen and (max-width:767px) {
+// .inputBlock{
+//     margin-top: 15vw;
+//     gap: 2vw;
 
-    h3{
-        font-size: 6vw;
-    }
-    .timeBlock{
-        gap: 8vw;
-    }
+//     h3{
+//         font-size: 6vw;
+//     }
+//     .timeBlock{
+//         gap: 8vw;
+//     }
 
-    input{
-        min-width: 60vw;
-        min-height: 12vw;
-        font-size: 5vw;
-    }
-    button{
-        min-width: 60vw;
-        min-height: 12vw;
-        font-size: 6vw;
-    }
-    .taskDescriptionInput{
-        min-width: 60vw;
-        min-height: 20vh;
+//     input{
+//         min-width: 60vw;
+//         min-height: 12vw;
+//         font-size: 5vw;
+//     }
+//     button{
+//         min-width: 60vw;
+//         min-height: 12vw;
+//         font-size: 6vw;
+//     }
+//     .taskDescriptionInput{
+//         min-width: 60vw;
+//         min-height: 20vh;
         
-    }
-}
-}
+//     }
+// }
+// }

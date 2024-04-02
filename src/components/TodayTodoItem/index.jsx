@@ -56,7 +56,7 @@ function  TodayTodoItem() {
                 checked={task.completed}
                 onChange={() => toggleTask(task.id, task.completed)}
               />
-              <span><h3>{task.taskName}</h3></span>
+              <p className={s.todayTaskName } >{task.taskName}</p>
               </div>
               <div className={s.rightContainerTodos}>
               <Icon onClick={() => removeTask(task.id)} className={s.deleteIcon} icon="ic:outline-delete" />
@@ -68,13 +68,16 @@ function  TodayTodoItem() {
                 )}
               </span>
               <span>
-                <p>{task.taskStartTime}</p>
-                <p>{task.taskEndTime}</p>
+                <p className={s.todayTasksTime}>{task.taskStartTime}</p>
+                <p className={s.todayTasksTime}>{task.taskEndTime}</p>
               </span>
               </div>
               </div>
-              <div>
-             {showedDescription === task.id && <p>{task.taskDescription}</p>}
+              <div >
+             {showedDescription === task.id && 
+             <p className={s.todayDescription} >
+              {task.taskDescription}
+              </p>}
              </div>
               </div>
           ))}

@@ -12,8 +12,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 1vw;
-  max-width: 35vw;
+  min-width: 35vw;
 }
 .inputBlock input {
   border: none;
@@ -106,10 +105,9 @@
   background-color: rgb(34, 193, 226);
 }
 
-@media screen and (max-width: 412px) {
+@media only screen and (min-width: 1024px) {
   .inputBlock {
-    margin-top: 15vw;
-    gap: 2vw;
+    min-width: 60vw;
   }
   .inputBlock h3 {
     font-size: 6vw;

@@ -6,11 +6,11 @@ import s from "./index.module.css"
 
 function TodoList(){
 const todos = useSelector(store=>store.todos.todos);
-const [displayedTasks, setDisplayedTasks] = useState('5');
+const [displayedTasks, setDisplayedTasks] = useState('4');
 
 
 
-const hanldeSeeAllTasks = ()=>{
+const handleSeeAllTasks = ()=>{
     setDisplayedTasks(todos.length)
 }
 
@@ -20,7 +20,7 @@ const hanldeSeeAllTasks = ()=>{
         <div className={s.containerTodoList}>
             <ProgressTask tasks={todos} />
          
-        <button onClick={hanldeSeeAllTasks}>See all</button>
+        <button onClick={handleSeeAllTasks}>See all</button>
         
             {todos.slice(0,displayedTasks).map((el)=> (
                 <TodoItem key={el.id}

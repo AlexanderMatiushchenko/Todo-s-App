@@ -22,7 +22,7 @@ function Footer(){
 <Link className={s.home} to={`${url}/home`}>
 
 
-    <Icon icon="mingcute:home-3-fill" />
+    <Icon className={s.homeIcon} icon="mingcute:home-3-fill" />
     
 </Link>
 
