@@ -7,7 +7,10 @@
     margin-top: 1vw;
     min-width: 35vw;
     border-radius: 8px;
-    font-size: 5vw;  
+    font-size: 5vw;
+    position: static;
+    bottom: 0; 
+    
 }
 .leftContainer{
     display: flex;

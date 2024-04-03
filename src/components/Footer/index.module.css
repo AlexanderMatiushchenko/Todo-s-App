@@ -16,6 +16,8 @@
   min-width: 35vw;
   border-radius: 8px;
   font-size: 5vw;
+  position: static;
+  bottom: 0;
 }
 
 .leftContainer {

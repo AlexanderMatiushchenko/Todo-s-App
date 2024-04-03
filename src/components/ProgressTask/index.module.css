@@ -13,7 +13,7 @@
 }
 .containerProgressTask .progressTaskLine {
   min-width: 100%;
-  font-size: 4vw;
+  font-size: 3vw;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -24,11 +24,11 @@
   .containerProgressTask h2 {
     font-size: 5vw;
   }
-  .progressLineParagraph {
+  .containerProgressTask .progressTaskLine {
     font-size: 4vw;
   }
 }
-@media only screen and (max-width: 766px) {
+@media only screen and (max-width: 767px) {
   .containerProgressTask {
     min-width: 80vw;
     padding: 3vw;
@@ -40,7 +40,6 @@
     font-size: 6vw;
   }
   .progressLineParagraph {
-    min-width: 80%;
     font-size: 6vw;
   }
 }

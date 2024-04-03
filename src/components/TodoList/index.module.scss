@@ -1,7 +1,9 @@
 .containerTodoList{
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 0.5vw;
+    min-width: 35vw;
     h2{
         font-size: 4vw;
     }
@@ -20,4 +22,15 @@
         color:white;
         
     }
+}
+@media only screen and (max-width: 1024px) {
+    .containerTodoList{
+        min-width: 60vw;
+    }   
+}
+
+@media only screen and (max-width: 767px) {
+    .containerTodoList{
+        min-width: 80vw;
+    }   
 }

@@ -43,7 +43,7 @@ input:checked + p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  min-width: 33vw;
+  min-width: 95%;
 }
 
 .todoItemLeft {
@@ -55,7 +55,7 @@ input:checked + p {
       -ms-flex-direction: row;
           flex-direction: row;
   gap: 1vw;
-  max-width: 15vw;
+  max-width: 50%;
 }
 
 .todoItemRight {
@@ -100,7 +100,7 @@ input:checked + p {
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 1vw;
-  min-width: 30vw;
+  min-width: 50%;
 }
 
 .containerAllTasks {
@@ -117,5 +117,22 @@ input:checked + p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  min-width: 33vw;
+  min-width: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .containerTodoItemMain {
+    min-width: 60vw;
+  }
+  .containerTodoItemMain svg {
+    font-size: 4vw;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .containerTodoItemMain {
+    min-width: 80vw;
+  }
+  .containerTodoItemMain svg {
+    font-size: 6vw;
+  }
 }

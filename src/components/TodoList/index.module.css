@@ -6,7 +6,11 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 0.5vw;
+  min-width: 35vw;
 }
 .containerTodoList h2 {
   font-size: 4vw;
@@ -23,4 +27,15 @@
 }
 .containerTodoList button:hover {
   color: white;
+}
+
+@media only screen and (max-width: 1024px) {
+  .containerTodoList {
+    min-width: 60vw;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .containerTodoList {
+    min-width: 80vw;
+  }
 }

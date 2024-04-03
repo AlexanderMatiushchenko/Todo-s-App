@@ -18,15 +18,14 @@
   border: none;
   outline: none;
   background-color: rgb(120, 220, 240);
-  border-radius: 12px;
-  margin: 1vw;
+  border-radius: 8px;
   padding: 1vw;
-  max-width: 35vw;
+  max-width: 100%;
   cursor: pointer;
 }
 .inputBlock input:focus {
   background-color: rgb(34, 193, 226);
-  color: whitesmoke;
+  color: white;
 }
 .inputBlock input:hover {
   background-color: rgb(34, 193, 226);
@@ -40,8 +39,8 @@
   background-color: rgb(120, 220, 240);
   cursor: pointer;
   min-width: 35vw;
-  -webkit-transition: background-color 0.3 ease;
-  transition: background-color 0.3 ease;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 .inputBlock button:hover {
   background-color: rgb(34, 193, 226);
@@ -66,9 +65,9 @@
   min-width: 10vw;
   border: none;
   background-color: rgb(120, 220, 240);
-  color: whitesmoke;
-  -webkit-transition: background-color 0.3 ease;
-  transition: background-color 0.3 ease;
+  color: white;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 .inputBlock .timeBlock input:hover {
   background-color: rgb(34, 193, 226);
@@ -76,16 +75,14 @@
 .inputBlock h3 {
   font-size: 2vw;
 }
-
-.weidInput {
+.inputBlock .weidInput {
   min-width: 35vw;
-  color: whitesmoke;
+  color: white;
 }
-
-.taskDescriptionInput {
+.inputBlock .taskDescriptionInput {
   border: none;
   background-color: rgb(120, 220, 240);
-  color: whitesmoke;
+  color: white;
   border-radius: 12px;
   outline: none;
   border: none;
@@ -95,37 +92,34 @@
   resize: none;
   padding: 1vw;
 }
-
-.taskDescriptionInput:focus {
+.inputBlock .taskDescriptionInput:focus {
   background-color: rgb(34, 193, 226);
 }
-
-.taskDescriptionInput:hover {
+.inputBlock .taskDescriptionInput:hover {
   cursor: pointer;
   background-color: rgb(34, 193, 226);
 }
-
 @media only screen and (min-width: 1024px) {
-  .inputBlock {
+  .inputBlock .inputBlock {
     min-width: 60vw;
   }
-  .inputBlock h3 {
+  .inputBlock .inputBlock h3 {
     font-size: 6vw;
   }
-  .inputBlock .timeBlock {
+  .inputBlock .inputBlock .timeBlock {
     gap: 8vw;
   }
-  .inputBlock input {
+  .inputBlock .inputBlock input {
     min-width: 60vw;
     min-height: 12vw;
     font-size: 5vw;
   }
-  .inputBlock button {
+  .inputBlock .inputBlock button {
     min-width: 60vw;
     min-height: 12vw;
     font-size: 6vw;
   }
-  .inputBlock .taskDescriptionInput {
+  .inputBlock .inputBlock .taskDescriptionInput {
     min-width: 60vw;
     min-height: 20vh;
   }

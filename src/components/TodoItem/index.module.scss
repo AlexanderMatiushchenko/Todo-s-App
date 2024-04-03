@@ -25,13 +25,13 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  min-width: 33vw;
+  min-width: 95%;
 }
 .todoItemLeft{
   display: flex;
   flex-direction: row;
   gap: 1vw;
-  max-width:15vw;
+  max-width:50%;
 
 }
 .todoItemRight{
@@ -59,12 +59,33 @@ color: white;
   align-items: center;
   justify-content: space-between;
   gap: 1vw;
-  min-width: 30vw;
+  min-width: 50%;
 }
 .containerAllTasks{
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  min-width: 33vw;
+  min-width: 100%;
+}
+@media only screen and (max-width: 1024px) {
+  .containerTodoItemMain{
+    min-width: 60vw;
+    svg{
+      font-size: 4vw;
+    }
+  }
+  .containerAllTasks{
+    
+  }
+  
+}
+@media only screen and (max-width: 767px) {
+  .containerTodoItemMain{
+    min-width: 80vw;
+    svg{
+      font-size: 6vw;
+    }
+  }
+  
 }
