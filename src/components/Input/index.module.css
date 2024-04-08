@@ -124,3 +124,30 @@
     min-height: 20vh;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .inputBlock {
+    margin-top: 5vw;
+    gap: 2vw;
+  }
+  .inputBlock h3 {
+    font-size: 6vw;
+  }
+  .inputBlock .timeBlock {
+    gap: 8vw;
+  }
+  .inputBlock input {
+    min-width: 100%;
+    min-height: 12vw;
+    font-size: 5vw;
+  }
+  .inputBlock button {
+    min-width: 60vw;
+    min-height: 12vw;
+    font-size: 6vw;
+  }
+  .inputBlock .taskDescriptionInput {
+    min-width: 60vw;
+    min-height: 20vh;
+  }
+}
