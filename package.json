@@ -45,6 +45,7 @@
   },
   "devDependencies": {
     "@iconify/react": "^4.1.1",
+    "gh-pages": "^6.1.1",
     "postcss-loader": "^8.1.0",
     "postcss-preset-env": "^9.3.0"
   }
