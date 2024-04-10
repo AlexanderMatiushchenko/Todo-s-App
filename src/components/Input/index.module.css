@@ -13,15 +13,15 @@
       -ms-flex-align: center;
           align-items: center;
   min-width: 35vw;
+  padding-bottom: 22vw;
 }
 .inputBlock input {
   border: none;
   outline: none;
   background-color: rgb(120, 220, 240);
-  border-radius: 8px;
+  border-radius: 12px;
   padding: 1vw;
   max-width: 100%;
-  cursor: pointer;
 }
 .inputBlock input:focus {
   background-color: rgb(34, 193, 226);
@@ -96,50 +96,26 @@
   background-color: rgb(34, 193, 226);
 }
 .inputBlock .taskDescriptionInput:hover {
-  cursor: pointer;
   background-color: rgb(34, 193, 226);
 }
-@media only screen and (min-width: 1024px) {
-  .inputBlock .inputBlock {
-    min-width: 60vw;
-  }
-  .inputBlock .inputBlock h3 {
-    font-size: 6vw;
-  }
-  .inputBlock .inputBlock .timeBlock {
-    gap: 8vw;
-  }
-  .inputBlock .inputBlock input {
-    min-width: 60vw;
-    min-height: 12vw;
-    font-size: 5vw;
-  }
-  .inputBlock .inputBlock button {
-    min-width: 60vw;
-    min-height: 12vw;
-    font-size: 6vw;
-  }
-  .inputBlock .inputBlock .taskDescriptionInput {
-    min-width: 60vw;
-    min-height: 20vh;
-  }
-}
 
-@media screen and (max-width: 767px) {
+@media only screen and (max-width: 1024px) {
   .inputBlock {
-    margin-top: 5vw;
-    gap: 2vw;
+    min-width: 60vw;
   }
   .inputBlock h3 {
     font-size: 6vw;
   }
   .inputBlock .timeBlock {
-    gap: 8vw;
+    min-width: 60vw;
   }
   .inputBlock input {
-    min-width: 100%;
+    min-width: 60vw;
     min-height: 12vw;
     font-size: 5vw;
+  }
+  .inputBlock .weidInput {
+    min-width: 60vw;
   }
   .inputBlock button {
     min-width: 60vw;
@@ -148,6 +124,37 @@
   }
   .inputBlock .taskDescriptionInput {
     min-width: 60vw;
-    min-height: 20vh;
+    min-height: 25vw;
+    font-size: 3vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .inputBlock {
+    gap: 2vw;
+    min-width: 80vw;
+  }
+  .inputBlock h3 {
+    font-size: 6vw;
+  }
+  .inputBlock .timeBlock {
+    min-width: 80vw;
+  }
+  .inputBlock input {
+    min-width: 100%;
+    min-height: 12vw;
+    font-size: 5vw;
+  }
+  .inputBlock button {
+    min-width: 80vw;
+    min-height: 12vw;
+    font-size: 6vw;
+  }
+  .inputBlock .taskDescriptionInput {
+    min-width: 80vw;
+    min-height: 25vh;
+    font-size: 5vw;
+  }
+  .inputBlock .weidInput {
+    min-width: 80vw;
   }
 }

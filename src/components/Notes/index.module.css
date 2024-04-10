@@ -1,3 +1,7 @@
+.containerNotesMain {
+  padding-bottom: 22vw;
+}
+
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13,7 +17,7 @@
 }
 
 h2 {
-  color: gainsboro;
+  color: black;
   font-size: 6vw;
 }
 
@@ -61,7 +65,6 @@ h2 {
     min-width: 60vw;
   }
   .containerNotesMain h2 {
-    color: gainsboro;
     font-size: 12vw;
   }
   .containerWithInputAndButton {
@@ -82,7 +85,6 @@ h2 {
     min-width: 80vw;
   }
   .containerNotesMain h2 {
-    color: gainsboro;
     font-size: 12vw;
   }
   .containerWithInputAndButton {

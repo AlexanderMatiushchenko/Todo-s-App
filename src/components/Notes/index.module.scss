@@ -1,17 +1,18 @@
 .containerNotesMain{
-
+  padding-bottom: 22vw;
 }
 .container{
   display: flex;
   flex-direction: column;
   gap: 1vw;  
+  
   svg{
     font-size: 3vw;
   }
   
 }
 h2{
-  color:gainsboro;
+  color:black;
   font-size: 6vw;
 }
 
@@ -50,7 +51,7 @@ h2{
 .containerNotesMain{
   min-width: 60vw;
   h2{
-    color:gainsboro;
+    
     font-size: 12vw;
   }
 }
@@ -74,7 +75,7 @@ h2{
   .containerNotesMain{
     min-width: 80vw;
     h2{
-      color:gainsboro;
+     
       font-size: 12vw;
     }
   }

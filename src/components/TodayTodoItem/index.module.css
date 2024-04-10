@@ -13,6 +13,7 @@
       -ms-flex-align: center;
           align-items: center;
   gap: 2vw;
+  padding-bottom: 22vw;
 }
 .mainConateinerTodayTodoItem svg {
   font-size: 3vw;
@@ -173,6 +174,9 @@ input:checked + span {
   .mainConateinerTodayTodoItem svg {
     font-size: 4vw;
   }
+  .mainConateinerTodayTodoItem p {
+    font-size: 3vw;
+  }
   .mainConateinerTodayTodoItem .containerWithBtnSeeAllTodaTasks {
     min-width: 60vw;
   }
@@ -198,6 +202,9 @@ input:checked + span {
 @media only screen and (max-width: 767px) {
   .mainConateinerTodayTodoItem {
     max-width: 80%;
+  }
+  .mainConateinerTodayTodoItem p {
+    font-size: 5vw;
   }
   .mainConateinerTodayTodoItem svg {
     font-size: 6vw;

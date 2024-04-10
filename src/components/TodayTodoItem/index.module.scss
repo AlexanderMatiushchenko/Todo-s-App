@@ -4,7 +4,8 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
- gap: 2vw;
+  gap: 2vw;
+  padding-bottom: 22vw;
   svg{
     font-size: 3vw;
   }
@@ -106,10 +107,14 @@ color: white;
     svg {
       font-size: 4vw;
     }
+    p{
+      font-size: 3vw;
+    }
 
     .containerWithBtnSeeAllTodaTasks {
      
       min-width: 60vw;
+  
 
       h2 {
         font-size:3.2vw;
@@ -143,7 +148,9 @@ color: white;
 @media only screen and (max-width: 767px) {
   .mainConateinerTodayTodoItem {
     max-width: 80%;
-
+    p{
+      font-size: 5vw;
+    }
     svg {
       font-size: 6vw;
     }
