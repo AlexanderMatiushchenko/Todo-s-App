@@ -1,0 +1,93 @@
+.containerTodoItemMain{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  background:linear-gradient(201deg, rgba(7,186,190,0.2329306722689075) 0%, rgba(34,193,226,1) 100%);
+  border-radius: 8px;
+  padding: 1vw;
+  min-width: 35vw;
+  overflow-wrap: anywhere;
+  max-width: 35vw;
+ 
+  p{
+    color: white;
+  }
+  svg{
+    font-size: 3vw;
+  }
+  
+}
+  input:checked + p{
+    text-decoration: line-through;
+}
+.containerTodoItem{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 95%;
+  
+}
+.todoItemLeft{
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+  max-width:50%;
+
+}
+.todoItemRight{
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+ 
+}
+.deleteIcon{
+  cursor: pointer;
+}
+.deleteIcon:hover{
+color: white;
+}
+.iconDescription{
+  cursor: pointer;
+}
+.iconDescription:hover{
+  color: white;
+}
+
+.todoItemContainerWIthSpanAndCheckbox{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1vw;
+  min-width: 50%;
+}
+.containerAllTasks{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 100%;
+}
+@media only screen and (max-width: 1024px) {
+  .containerTodoItemMain{
+    min-width: 60vw;
+    svg{
+      font-size: 4vw;
+    }
+  }
+  .containerAllTasks{
+    
+  }
+  
+}
+@media only screen and (max-width: 767px) {
+  .containerTodoItemMain{
+    min-width: 80vw;
+    svg{
+      font-size: 6vw;
+    }
+  }
+  
+}

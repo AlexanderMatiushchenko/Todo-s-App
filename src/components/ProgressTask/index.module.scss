@@ -1,0 +1,47 @@
+.containerProgressTask {
+    background: linear-gradient(97deg, rgba(7, 186, 190, 0.2329306722689075) 0%, rgba(34, 193, 226, 1) 100%);
+    border-radius: 8px;
+    padding: 2vw;
+    font-size: 2vw;
+    min-width: 35vw;
+   
+    color: white;
+
+    h2 {
+        color: white;
+        font-size: 3vw;
+    }
+    .progressTaskLine {
+        min-width: 100%;
+        font-size: 3vw;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .containerProgressTask {
+        min-width: 60vw;
+        padding: 3vw;
+        h2 {
+            font-size: 5vw;
+        }
+        .progressTaskLine {
+            font-size: 4vw;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .containerProgressTask {
+        min-width: 80vw;
+        padding: 3vw;
+        h2 {
+            font-size: 7vw;
+        }
+        .progressTaskLine {
+            font-size: 6vw;
+        }
+    }
+    .progressLineParagraph {
+        font-size: 6vw;
+    }
+}

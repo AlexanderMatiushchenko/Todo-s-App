@@ -1,0 +1,160 @@
+.inputBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 35vw;
+  padding-bottom: 22vw;
+}
+.inputBlock input {
+  border: none;
+  outline: none;
+  background-color: rgb(120, 220, 240);
+  border-radius: 12px;
+  padding: 1vw;
+  max-width: 100%;
+}
+.inputBlock input:focus {
+  background-color: rgb(34, 193, 226);
+  color: white;
+}
+.inputBlock input:hover {
+  background-color: rgb(34, 193, 226);
+}
+.inputBlock button {
+  padding: 1vw;
+  border-radius: 12px;
+  border: solid 1px rgb(204, 203, 203);
+  color: white;
+  font-size: 2vw;
+  background-color: rgb(120, 220, 240);
+  cursor: pointer;
+  min-width: 35vw;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+.inputBlock button:hover {
+  background-color: rgb(34, 193, 226);
+}
+.inputBlock .timeBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-width: 35vw;
+}
+.inputBlock .timeBlock input {
+  min-width: 10vw;
+  border: none;
+  background-color: rgb(120, 220, 240);
+  color: white;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+.inputBlock .timeBlock input:hover {
+  background-color: rgb(34, 193, 226);
+}
+.inputBlock h3 {
+  font-size: 2vw;
+}
+.inputBlock .weidInput {
+  min-width: 35vw;
+  color: white;
+}
+.inputBlock .taskDescriptionInput {
+  border: none;
+  background-color: rgb(120, 220, 240);
+  color: white;
+  border-radius: 12px;
+  outline: none;
+  border: none;
+  margin: 1vw;
+  min-width: 35vw;
+  min-height: 20vh;
+  resize: none;
+  padding: 1vw;
+}
+.inputBlock .taskDescriptionInput:focus {
+  background-color: rgb(34, 193, 226);
+}
+.inputBlock .taskDescriptionInput:hover {
+  background-color: rgb(34, 193, 226);
+}
+
+@media only screen and (max-width: 1024px) {
+  .inputBlock {
+    min-width: 60vw;
+  }
+  .inputBlock h3 {
+    font-size: 6vw;
+  }
+  .inputBlock .timeBlock {
+    min-width: 60vw;
+  }
+  .inputBlock input {
+    min-width: 60vw;
+    min-height: 12vw;
+    font-size: 5vw;
+  }
+  .inputBlock .weidInput {
+    min-width: 60vw;
+  }
+  .inputBlock button {
+    min-width: 60vw;
+    min-height: 12vw;
+    font-size: 6vw;
+  }
+  .inputBlock .taskDescriptionInput {
+    min-width: 60vw;
+    min-height: 25vw;
+    font-size: 3vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .inputBlock {
+    gap: 2vw;
+    min-width: 80vw;
+  }
+  .inputBlock h3 {
+    font-size: 6vw;
+  }
+  .inputBlock .timeBlock {
+    min-width: 80vw;
+  }
+  .inputBlock input {
+    min-width: 100%;
+    min-height: 12vw;
+    font-size: 5vw;
+  }
+  .inputBlock button {
+    min-width: 80vw;
+    min-height: 12vw;
+    font-size: 6vw;
+  }
+  .inputBlock .taskDescriptionInput {
+    min-width: 80vw;
+    min-height: 25vh;
+    font-size: 5vw;
+  }
+  .inputBlock .weidInput {
+    min-width: 80vw;
+  }
+}

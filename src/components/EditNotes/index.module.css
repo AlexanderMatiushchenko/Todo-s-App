@@ -1,0 +1,71 @@
+.containerWithNotes {
+  background: linear-gradient(200deg, rgba(7, 186, 190, 0.2329306723) 0%, rgb(34, 193, 226) 100%);
+  border-radius: 8px;
+  color: white;
+  padding: 1vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 1vw;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  min-width: 35vw;
+}
+.containerWithNotes p {
+  max-width: 25vw;
+  word-wrap: break-word;
+}
+
+.notesInput:focus {
+  border: none;
+  outline: none;
+  background: rgb(18, 159, 187);
+  border-radius: 8px;
+  padding: 1vw;
+}
+
+.notesButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 1vw;
+}
+.notesButtons button {
+  border: none;
+  cursor: pointer;
+  background: none;
+  font-size: 2vw;
+}
+.notesButtons button:hover {
+  color: white;
+}
+
+@media only screen and (max-width: 1024px) {
+  .containerWithNotes {
+    min-width: 60vw;
+  }
+  .containerWithNotes p {
+    max-width: 50vw;
+    font-size: 4vw;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .containerWithNotes {
+    min-width: 80vw;
+  }
+  .containerWithNotes p {
+    font-size: 7vw;
+  }
+}

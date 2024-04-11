@@ -1,0 +1,102 @@
+.containerNotesMain {
+  padding-bottom: 22vw;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1vw;
+}
+.container svg {
+  font-size: 3vw;
+}
+
+h2 {
+  color: black;
+  font-size: 6vw;
+}
+
+.containerWithInputAndButton {
+  min-width: 35vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.containerWithInputAndButton input {
+  min-width: 100%;
+  border: none;
+}
+
+.addNoteBtn {
+  border: none;
+  background: none;
+  font-size: 6vw;
+  color: rgb(34, 193, 226);
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.addNoteBtn:hover {
+  color: rgb(31, 100, 114);
+}
+
+.notesInput {
+  outline: none;
+  background: rgb(22, 188, 221);
+  border-radius: 8px;
+  padding: 1vw;
+}
+
+@media only screen and (max-width: 1024px) {
+  .containerNotesMain {
+    min-width: 60vw;
+  }
+  .containerNotesMain h2 {
+    font-size: 12vw;
+  }
+  .containerWithInputAndButton {
+    min-width: 100%;
+  }
+  .containerWithInputAndButton svg {
+    font-size: 10vw;
+  }
+  .container {
+    min-width: 100%;
+  }
+  .container svg {
+    font-size: 5vw;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .containerNotesMain {
+    min-width: 80vw;
+  }
+  .containerNotesMain h2 {
+    font-size: 12vw;
+  }
+  .containerWithInputAndButton {
+    min-width: 100%;
+  }
+  .containerWithInputAndButton svg {
+    font-size: 15vw;
+  }
+  .container {
+    min-width: 100%;
+  }
+  .container svg {
+    font-size: 7vw;
+  }
+}

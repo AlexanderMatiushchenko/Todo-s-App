@@ -1,0 +1,201 @@
+
+.mainConateinerTodayTodoItem{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2vw;
+  padding-bottom: 22vw;
+  svg{
+    font-size: 3vw;
+  }
+}
+  input:checked + span{
+    text-decoration: line-through;
+
+  }
+  .containerWithBtnSeeAllTodaTasks{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 35vw;
+    h2{
+      font-size: 2vw;
+      color: black;
+    }
+    h3{
+      font-size: 2vw;
+    }
+  }
+  .btnSeeAllTodayTask{
+    border: none;
+    background: linear-gradient(201deg, rgba(7,186,190,0.2329306722689075) 0%, rgba(34,193,226,1) 100%);
+    border-radius: 8px;
+    padding: 1vw;
+    min-width: 5vw;
+   
+  }
+  .btnSeeAllTodayTask:hover{
+    cursor: pointer;
+    background-color:rgba(34,193,226,1);
+    color: white;
+    
+  }
+.containerTodaysTasks{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.todaysTask{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2vw;
+  background: linear-gradient(201deg, rgba(7,186,190,0.2329306722689075) 0%, rgba(34,193,226,1) 100%);
+  border-radius: 8px;
+  padding: 1vw;
+  min-width: 33vw;
+  overflow-wrap: anywhere;
+  p{
+    color: white;
+  }
+  
+}
+.tasksContainer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 33vw;
+}
+.containerAllTodos{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  gap: 1vw;
+  max-width: 33vw;
+}
+.leftContainerTodos{
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+  max-width:15vw;
+
+}
+.rightContainerTodos{
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+ 
+}
+.deleteIcon{
+  cursor: pointer;
+}
+.deleteIcon:hover{
+color: white;
+}
+.iconDescription{
+  cursor: pointer;
+}
+.iconDescription:hover{
+  color: white;
+}
+@media only screen and (max-width: 1024px) {
+  .mainConateinerTodayTodoItem {
+    svg {
+      font-size: 4vw;
+    }
+    p{
+      font-size: 3vw;
+    }
+
+    .containerWithBtnSeeAllTodaTasks {
+     
+      min-width: 60vw;
+  
+
+      h2 {
+        font-size:3.2vw;
+        
+      }
+
+      h3 {
+        font-size: 2.5vw;
+      }
+    }
+
+    .btnSeeAllTodayTask {
+      min-width: 15vw;
+    }
+
+    .todaysTask {
+      min-width: 60vw;
+    }
+
+    .tasksContainer {
+    
+      min-width: 100%;
+    }
+
+    .containerAllTodos {
+     
+      max-width: 100%;
+    }
+  }
+}
+@media only screen and (max-width: 767px) {
+  .mainConateinerTodayTodoItem {
+    max-width: 80%;
+    p{
+      font-size: 5vw;
+    }
+    svg {
+      font-size: 6vw;
+    }
+    .leftContainerTodos{
+  
+      max-width:60%;
+    
+    }
+
+    .containerWithBtnSeeAllTodaTasks {
+     
+      min-width: 80vw;
+
+      h2 {
+        font-size:5vw;
+        
+      }
+
+      h3 {
+        font-size: 4vw;
+      }
+    }
+
+    .btnSeeAllTodayTask {
+      min-width: 25vw;
+      font-size: 5vw;
+    }
+
+    .todaysTask {
+      min-width: 80vw;
+    }
+
+    .tasksContainer {
+      min-width: 100%;
+    }
+
+    .containerAllTodos {
+      max-width:100%;
+    }
+    .todayDescription,
+    .todayTasksTime {
+      font-size: 5vw;
+    }
+    .todayTaskName {
+      font-size: 6vw;
+    }
+  }
+}
