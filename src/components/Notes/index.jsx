@@ -24,6 +24,12 @@ function Notes() {
   const handleRemoveNote = (id) => {
     dispatch(removeNote({ id }));
   };
+  const handleKeyDown = (e) => {
+    if (e.key === 'Enter') {
+      handleAddNote();
+    }
+  };
+  
 
   return (
     <div className={s.containerNotesMain}>
@@ -36,6 +42,7 @@ function Notes() {
             onChange={(e) => setNoteDescription(e.target.value)}
             autoFocus
             onBlur ={handleAddNote} 
+            onKeyDown={handleKeyDown}
           />
         ) : (
           <button className={s.addNoteBtn} onClick={handleAddNote}>
