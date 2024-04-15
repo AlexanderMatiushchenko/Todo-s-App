@@ -35,11 +35,11 @@ function Input() {
       <div className={s.timeBlock}>
         <div>
         <h3>Start</h3>
-      <input type="time" value={taskStartTime} onChange={(e)=>setTaskStartTime(e.target.value)}/>
+      <input className={s.timeInput} type="time" value={taskStartTime} onChange={(e)=>setTaskStartTime(e.target.value)}/>
       </div>
       <div>
       <h3>End</h3>
-      <input type="time" value={taskEndTime} onChange={(e)=>setTaskEndTime(e.target.value)} />
+      <input className={s.timeInput} type="time" value={taskEndTime} onChange={(e)=>setTaskEndTime(e.target.value)} />
       </div>
       </div>
       <h3>Description</h3>

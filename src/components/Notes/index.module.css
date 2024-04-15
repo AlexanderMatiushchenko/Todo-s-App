@@ -55,7 +55,7 @@ h2 {
 
 .notesInput {
   outline: none;
-  background: rgb(22, 188, 221);
+  background: rgb(7, 117, 145);
   border-radius: 8px;
   padding: 1vw;
   margin: 2vw;
@@ -93,6 +93,9 @@ h2 {
   .containerNotesMain h2 {
     font-size: 12vw;
   }
+  .containerNotesMain .notesInput {
+    font-size: 8vw;
+  }
   .containerWithInputAndButton {
     min-width: 100%;
   }
@@ -105,7 +108,27 @@ h2 {
   .container svg {
     font-size: 7vw;
   }
-  .notesInput {
+}
+@media only screen and (orientation: landscape) {
+  .containerNotesMain {
+    min-width: 80vw;
+  }
+  .containerNotesMain h2 {
+    font-size: 7vw;
+  }
+  .containerNotesMain .notesInput {
+    font-size: 3vw;
+  }
+  .containerWithInputAndButton {
+    min-width: 100%;
+  }
+  .containerWithInputAndButton svg {
     font-size: 8vw;
+  }
+  .container {
+    min-width: 100%;
+  }
+  .container svg {
+    font-size: 4vw;
   }
 }

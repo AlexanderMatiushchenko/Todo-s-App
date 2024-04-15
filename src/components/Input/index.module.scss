@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-width: 35vw;
+   
     padding-bottom: 22vw;
 
     input {
@@ -55,6 +55,7 @@
         input:hover {
             background-color: rgba(34, 193, 226, 1);
         }
+        
     }
 
     h3 {
@@ -65,7 +66,9 @@
         min-width: 35vw;
         color: white;
     }
-
+    .timeInput{
+        max-width: 25vw;
+    }
     .taskDescriptionInput {
         border: none;
         background-color: rgb(120, 220, 240);
@@ -123,6 +126,9 @@
         input:hover {
             background-color: rgb(120, 220, 240);
         }
+        .timeInput{
+            max-width: 35vw;
+        }
     }
 
 
@@ -130,7 +136,9 @@
 .inputBlock{
     gap: 2vw;
     min-width: 80vw;
-    
+    .timeInput{
+        max-width: 45vw;
+    }
     
     h3{
         font-size: 6vw;
@@ -167,4 +175,38 @@
         background-color: rgb(120, 220, 240);
     }
 }
+}
+
+@media only screen and (orientation: landscape){
+    .inputBlock{
+        gap: 1vw;
+        min-width: 80vw;
+        
+        
+        h3{
+            font-size: 3vw;
+        }
+        .timeBlock{
+            min-width: 80vw;
+            
+        }
+    
+        input{
+            max-width: 80vw;
+            min-height: 5vw;
+            font-size: 3vw;
+        }
+        button{
+            min-width: 80vw;
+            min-height:5vw;
+            font-size: 4vw;
+        }
+        .taskDescriptionInput{
+            min-width: 80vw;
+            min-height: 10vh;
+            font-size: 3vw;
+            
+        }
+        
+    }
 }

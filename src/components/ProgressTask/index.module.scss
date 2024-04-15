@@ -45,3 +45,18 @@
         font-size: 6vw;
     }
 }
+@media only screen and (orientation: landscape){
+    .containerProgressTask {
+        min-width: 80vw;
+        padding: 2vw;
+        h2 {
+            font-size: 5vw;
+        }
+        .progressTaskLine {
+            font-size: 4vw;
+        }
+    }
+    .progressLineParagraph {
+        font-size: 4vw;
+    }
+}

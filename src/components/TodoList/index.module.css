@@ -54,3 +54,15 @@
     font-size: 5vw;
   }
 }
+@media only screen and (orientation: landscape) {
+  .containerTodoList {
+    min-width: 80vw;
+  }
+  .containerTodoList button {
+    min-width: 15vw;
+    font-size: 3vw;
+  }
+  .containerTodoList p {
+    font-size: 3vw;
+  }
+}

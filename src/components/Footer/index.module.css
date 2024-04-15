@@ -92,3 +92,18 @@ a:hover {
     color: rgb(34, 193, 226);
   }
 }
+@media only screen and (orientation: landscape) {
+  .footerContainer {
+    min-width: 100%;
+    margin-top: 1vw;
+  }
+  .footerContainer svg {
+    font-size: 5vw;
+  }
+  .footerContainer .homeIcon {
+    font-size: 7vw;
+  }
+  .footerContainer .home:hover {
+    color: rgb(34, 193, 226);
+  }
+}

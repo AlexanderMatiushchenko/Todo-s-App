@@ -227,3 +227,73 @@ color: white;
       }
   }
 }
+@media only screen and (orientation: landscape) {
+  .mainConateinerTodayTodoItem {
+    max-width: 60%;
+    p{
+      font-size: 3vw;
+    }
+    svg {
+      font-size: 3vw;
+    }
+    .leftContainerTodos{
+  
+      max-width:40%;
+    
+    }
+
+    .containerWithBtnSeeAllTodaTasks {
+
+      p{
+        font-size: 3vw;
+      }
+     
+      min-width: 80vw;
+
+      h2 {
+        font-size:4vw;
+        
+      }
+
+      h3 {
+        font-size: 4vw;
+      }
+    }
+
+    .btnSeeAllTodayTask {
+      min-width: 10vw;
+      font-size: 3vw;
+    }
+
+    .todaysTask {
+      min-width: 80vw;
+    }
+
+    .tasksContainer {
+      min-width: 100%;
+    }
+
+    .containerAllTodos {
+      max-width:100%;
+    }
+    .todayDescription,
+    .todayTasksTime {
+      font-size: 3vw;
+    }
+    .todayTaskName {
+      font-size: 6vw;
+    }
+    .btnSeeAllTodayTask:hover{
+     cursor: none;
+      background-color:rgba(34,193,226,1);
+      color: black;
+      background: linear-gradient(201deg, rgba(7,186,190,0.2329306722689075) 0%, rgba(34,193,226,1) 100%);
+    }
+    .iconDescription:hover{
+      color: black;
+    }
+    .deleteIcon:hover{
+      color: black;
+      }
+  }
+}

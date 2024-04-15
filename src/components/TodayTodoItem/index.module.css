@@ -269,3 +269,61 @@ input:checked + span {
     color: black;
   }
 }
+@media only screen and (orientation: landscape) {
+  .mainConateinerTodayTodoItem {
+    max-width: 60%;
+  }
+  .mainConateinerTodayTodoItem p {
+    font-size: 3vw;
+  }
+  .mainConateinerTodayTodoItem svg {
+    font-size: 3vw;
+  }
+  .mainConateinerTodayTodoItem .leftContainerTodos {
+    max-width: 40%;
+  }
+  .mainConateinerTodayTodoItem .containerWithBtnSeeAllTodaTasks {
+    min-width: 80vw;
+  }
+  .mainConateinerTodayTodoItem .containerWithBtnSeeAllTodaTasks p {
+    font-size: 3vw;
+  }
+  .mainConateinerTodayTodoItem .containerWithBtnSeeAllTodaTasks h2 {
+    font-size: 4vw;
+  }
+  .mainConateinerTodayTodoItem .containerWithBtnSeeAllTodaTasks h3 {
+    font-size: 4vw;
+  }
+  .mainConateinerTodayTodoItem .btnSeeAllTodayTask {
+    min-width: 10vw;
+    font-size: 3vw;
+  }
+  .mainConateinerTodayTodoItem .todaysTask {
+    min-width: 80vw;
+  }
+  .mainConateinerTodayTodoItem .tasksContainer {
+    min-width: 100%;
+  }
+  .mainConateinerTodayTodoItem .containerAllTodos {
+    max-width: 100%;
+  }
+  .mainConateinerTodayTodoItem .todayDescription,
+  .mainConateinerTodayTodoItem .todayTasksTime {
+    font-size: 3vw;
+  }
+  .mainConateinerTodayTodoItem .todayTaskName {
+    font-size: 6vw;
+  }
+  .mainConateinerTodayTodoItem .btnSeeAllTodayTask:hover {
+    cursor: none;
+    background-color: rgb(34, 193, 226);
+    color: black;
+    background: linear-gradient(201deg, rgba(7, 186, 190, 0.2329306723) 0%, rgb(34, 193, 226) 100%);
+  }
+  .mainConateinerTodayTodoItem .iconDescription:hover {
+    color: black;
+  }
+  .mainConateinerTodayTodoItem .deleteIcon:hover {
+    color: black;
+  }
+}

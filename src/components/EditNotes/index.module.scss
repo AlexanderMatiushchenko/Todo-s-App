@@ -18,7 +18,7 @@
   .notesInput:focus{
     border: none;
       outline: none;
-      background:  rgb(18, 159, 187);
+      background:  rgb(187, 227, 235);
       border-radius: 8px;
       padding: 1vw;
     
@@ -63,4 +63,15 @@
   }
   }
     
+  }
+  @media only screen and (orientation: landscape){
+    .containerWithNotes{
+      
+      min-width: 80vw;
+      p{
+      
+      font-size: 3vw;
+      
+  }
+  }
   }

@@ -72,3 +72,18 @@ a:hover{
         }
     }
 }
+@media only screen and (orientation: landscape) {
+    .footerContainer{
+        min-width: 100%;
+        margin-top: 1vw;
+        svg{
+            font-size: 5vw;
+        }
+        .homeIcon{
+            font-size: 7vw;
+        }
+        .home:hover{
+            color: rgba(34,193,226,1);
+        }
+    }
+}
