@@ -269,7 +269,7 @@ input:checked + span {
     color: black;
   }
 }
-@media only screen and (orientation: landscape) {
+@media only screen and (max-width: 766px) and (orientation: landscape) {
   .mainConateinerTodayTodoItem {
     max-width: 60%;
   }
@@ -312,7 +312,7 @@ input:checked + span {
     font-size: 3vw;
   }
   .mainConateinerTodayTodoItem .todayTaskName {
-    font-size: 6vw;
+    font-size: 4vw;
   }
   .mainConateinerTodayTodoItem .btnSeeAllTodayTask:hover {
     cursor: none;

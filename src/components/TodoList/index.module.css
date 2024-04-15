@@ -54,7 +54,7 @@
     font-size: 5vw;
   }
 }
-@media only screen and (orientation: landscape) {
+@media only screen and (max-width: 766px) and (orientation: landscape) {
   .containerTodoList {
     min-width: 80vw;
   }

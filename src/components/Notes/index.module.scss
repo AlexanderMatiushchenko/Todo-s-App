@@ -38,10 +38,6 @@ h2{
   padding: 0;
   cursor: pointer;
 }
-.addNoteBtn:hover{
-  color: rgb(31, 100, 114);
-  
-}
 
 .notesInput{
   outline: none;
@@ -110,7 +106,7 @@ h2{
  
   
 }
-@media only screen and (orientation: landscape){
+@media only screen and (max-width: 766px) and (orientation: landscape){
   .containerNotesMain{
     min-width: 80vw;
     h2{

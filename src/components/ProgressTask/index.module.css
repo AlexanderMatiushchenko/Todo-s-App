@@ -42,7 +42,7 @@
     font-size: 6vw;
   }
 }
-@media only screen and (orientation: landscape) {
+@media only screen and (max-width: 766px) and (orientation: landscape) {
   .containerProgressTask {
     min-width: 80vw;
     padding: 2vw;

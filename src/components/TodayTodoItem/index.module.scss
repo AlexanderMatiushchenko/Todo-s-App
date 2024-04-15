@@ -227,7 +227,7 @@ color: white;
       }
   }
 }
-@media only screen and (orientation: landscape) {
+@media only screen and (max-width: 766px) and (orientation: landscape) {
   .mainConateinerTodayTodoItem {
     max-width: 60%;
     p{
@@ -281,7 +281,7 @@ color: white;
       font-size: 3vw;
     }
     .todayTaskName {
-      font-size: 6vw;
+      font-size: 4vw;
     }
     .btnSeeAllTodayTask:hover{
      cursor: none;
