@@ -143,6 +143,18 @@ color: white;
      
       max-width: 100%;
     }
+    .btnSeeAllTodayTask:hover{
+      cursor: none;
+       background-color:rgba(34,193,226,1);
+       color: black;
+       background: linear-gradient(201deg, rgba(7,186,190,0.2329306722689075) 0%, rgba(34,193,226,1) 100%);
+     }
+     .iconDescription:hover{
+       color: black;
+     }
+     .deleteIcon:hover{
+       color: black;
+       }
   }
 }
 @media only screen and (max-width: 767px) {
@@ -201,5 +213,17 @@ color: white;
     .todayTaskName {
       font-size: 6vw;
     }
+    .btnSeeAllTodayTask:hover{
+     cursor: none;
+      background-color:rgba(34,193,226,1);
+      color: black;
+      background: linear-gradient(201deg, rgba(7,186,190,0.2329306722689075) 0%, rgba(34,193,226,1) 100%);
+    }
+    .iconDescription:hover{
+      color: black;
+    }
+    .deleteIcon:hover{
+      color: black;
+      }
   }
 }

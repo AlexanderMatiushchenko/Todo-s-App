@@ -198,6 +198,18 @@ input:checked + span {
   .mainConateinerTodayTodoItem .containerAllTodos {
     max-width: 100%;
   }
+  .mainConateinerTodayTodoItem .btnSeeAllTodayTask:hover {
+    cursor: none;
+    background-color: rgb(34, 193, 226);
+    color: black;
+    background: linear-gradient(201deg, rgba(7, 186, 190, 0.2329306723) 0%, rgb(34, 193, 226) 100%);
+  }
+  .mainConateinerTodayTodoItem .iconDescription:hover {
+    color: black;
+  }
+  .mainConateinerTodayTodoItem .deleteIcon:hover {
+    color: black;
+  }
 }
 @media only screen and (max-width: 767px) {
   .mainConateinerTodayTodoItem {
@@ -243,5 +255,17 @@ input:checked + span {
   }
   .mainConateinerTodayTodoItem .todayTaskName {
     font-size: 6vw;
+  }
+  .mainConateinerTodayTodoItem .btnSeeAllTodayTask:hover {
+    cursor: none;
+    background-color: rgb(34, 193, 226);
+    color: black;
+    background: linear-gradient(201deg, rgba(7, 186, 190, 0.2329306723) 0%, rgb(34, 193, 226) 100%);
+  }
+  .mainConateinerTodayTodoItem .iconDescription:hover {
+    color: black;
+  }
+  .mainConateinerTodayTodoItem .deleteIcon:hover {
+    color: black;
   }
 }

@@ -127,6 +127,12 @@
     min-height: 25vw;
     font-size: 3vw;
   }
+  button:hover {
+    background-color: rgb(120, 220, 240);
+  }
+  input:hover {
+    background-color: rgb(120, 220, 240);
+  }
 }
 @media screen and (max-width: 767px) {
   .inputBlock {
@@ -156,5 +162,11 @@
   }
   .inputBlock .weidInput {
     min-width: 80vw;
+  }
+  .inputBlock button:hover {
+    background-color: rgb(120, 220, 240);
+  }
+  .inputBlock input:hover {
+    background-color: rgb(120, 220, 240);
   }
 }

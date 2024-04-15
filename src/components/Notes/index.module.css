@@ -58,6 +58,9 @@ h2 {
   background: rgb(22, 188, 221);
   border-radius: 8px;
   padding: 1vw;
+  margin: 2vw;
+  font-size: 5vw;
+  color: white;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -66,6 +69,9 @@ h2 {
   }
   .containerNotesMain h2 {
     font-size: 12vw;
+  }
+  .containerNotesMain .notesInput {
+    font-size: 7vw;
   }
   .containerWithInputAndButton {
     min-width: 100%;
@@ -98,5 +104,8 @@ h2 {
   }
   .container svg {
     font-size: 7vw;
+  }
+  .notesInput {
+    font-size: 8vw;
   }
 }

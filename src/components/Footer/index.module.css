@@ -73,6 +73,9 @@ a:hover {
   .footerContainer .homeIcon {
     font-size: 10vw;
   }
+  .footerContainer .home:hover {
+    color: rgb(34, 193, 226);
+  }
 }
 @media only screen and (max-width: 767px) {
   .footerContainer {
@@ -84,5 +87,8 @@ a:hover {
   }
   .footerContainer .homeIcon {
     font-size: 15vw;
+  }
+  .footerContainer .home:hover {
+    color: rgb(34, 193, 226);
   }
 }
