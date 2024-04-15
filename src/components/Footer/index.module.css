@@ -64,19 +64,19 @@ a:hover {
 
 @media only screen and (max-width: 1024px) {
   .footerContainer {
-    min-width: 60vw;
+    min-width: 100%;
     margin-top: 4vw;
   }
   .footerContainer svg {
-    font-size: 10vw;
+    font-size: 7vw;
   }
   .footerContainer .homeIcon {
-    font-size: 13vw;
+    font-size: 10vw;
   }
 }
 @media only screen and (max-width: 767px) {
   .footerContainer {
-    min-width: 80vw;
+    min-width: 100%;
     margin-top: 6vw;
   }
   .footerContainer svg {

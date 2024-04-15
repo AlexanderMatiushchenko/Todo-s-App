@@ -215,6 +215,9 @@ input:checked + span {
   .mainConateinerTodayTodoItem .containerWithBtnSeeAllTodaTasks {
     min-width: 80vw;
   }
+  .mainConateinerTodayTodoItem .containerWithBtnSeeAllTodaTasks p {
+    font-size: 5vw;
+  }
   .mainConateinerTodayTodoItem .containerWithBtnSeeAllTodaTasks h2 {
     font-size: 5vw;
   }
