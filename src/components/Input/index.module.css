@@ -77,9 +77,11 @@
 .inputBlock .weidInput {
   min-width: 35vw;
   color: white;
+  font-size: 2vw;
 }
 .inputBlock .timeInput {
   max-width: 25vw;
+  font-size: 2vw;
 }
 .inputBlock .taskDescriptionInput {
   border: none;
@@ -93,6 +95,7 @@
   min-height: 20vh;
   resize: none;
   padding: 1vw;
+  font-size: 2vw;
 }
 .inputBlock .taskDescriptionInput:focus {
   background-color: rgb(34, 193, 226);

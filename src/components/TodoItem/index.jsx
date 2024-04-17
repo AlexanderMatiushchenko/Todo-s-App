@@ -21,16 +21,16 @@ const formattedeadLinedDate = `${dateParts[2]}-${dateParts[1]}-${dateParts[0]}`;
   const toggleDescription = (taskId) => {
     setShowedDescription(taskId === showedDescription ? null : taskId);
   }
-console.log({taskDescription});
+
   return (
     <div className={s.containerTodoItemMain}>
-      <h5>{formattedeadLinedDate}</h5>
+      <h5 className={s.todoDate}>{formattedeadLinedDate}</h5>
    <div className={s.containerAllTasks}>
     
           <div className={s.todoItemLeft}>
             <input type="checkbox" checked={completed} onChange={() => toggleTask(id,completed)} />
             
-            <p>{taskName}</p>
+            <p className={s.taskName}>{taskName}</p>
           </div>
           <div className={s.todoItemRight}>
             <Icon onClick={() => removeTask(id)} className={s.deleteIcon} icon="ic:outline-delete" />
@@ -41,10 +41,9 @@ console.log({taskDescription});
                 <Icon icon="system-uicons:chevron-down" />
               )}
             </span>
-            <span>
-              
-                <p>{taskStartTime}</p>
-                <p>{taskEndTime}</p>
+            <span > 
+                <p className={s.todoTime}>{taskStartTime}</p>
+                <p className={s.todoTime}>{taskEndTime}</p>
               </span>
           </div>
           </div>

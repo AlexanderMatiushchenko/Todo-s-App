@@ -52,7 +52,8 @@ input:checked + span {
   background: linear-gradient(201deg, rgba(7, 186, 190, 0.2329306723) 0%, rgb(34, 193, 226) 100%);
   border-radius: 8px;
   padding: 1vw;
-  min-width: 5vw;
+  min-width: 8vw;
+  font-size: 2vw;
 }
 
 .btnSeeAllTodayTask:hover {
@@ -113,7 +114,7 @@ input:checked + span {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  min-width: 33vw;
+  min-width: 35vw;
 }
 
 .containerAllTodos {
@@ -128,7 +129,7 @@ input:checked + span {
       -ms-flex-align: center;
           align-items: center;
   gap: 1vw;
-  max-width: 33vw;
+  max-width: 35vw;
 }
 
 .leftContainerTodos {
@@ -141,6 +142,12 @@ input:checked + span {
           flex-direction: row;
   gap: 1vw;
   max-width: 15vw;
+}
+
+.todayDescription,
+.todayTasksTime,
+.todayTaskName {
+  font-size: 2vw;
 }
 
 .rightContainerTodos {

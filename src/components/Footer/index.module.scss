@@ -4,11 +4,7 @@
     align-items: center;
     justify-content: space-around;
     background-color:whitesmoke;
-    margin-top: 1vw;
-    min-width: 35vw;
     border-radius: 8px;
-    font-size: 5vw;
-    position: static;
     bottom: 0;
     position: fixed; 
     
@@ -44,7 +40,6 @@ a:hover{
 @media only screen and (max-width: 1024px) {
     .footerContainer{
         min-width: 100%;
-        margin-top: 4vw;
         svg{
             font-size: 7vw;
         }
@@ -60,7 +55,6 @@ a:hover{
 @media only screen and (max-width: 767px) {
     .footerContainer{
         min-width: 100%;
-        margin-top: 6vw;
         svg{
             font-size: 12vw;
         }
@@ -75,7 +69,6 @@ a:hover{
 @media only screen and (orientation: landscape) {
     .footerContainer{
         min-width: 100%;
-        margin-top: 1vw;
         svg{
             font-size: 5vw;
         }

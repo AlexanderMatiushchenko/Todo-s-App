@@ -6,10 +6,9 @@
   background:linear-gradient(201deg, rgba(7,186,190,0.2329306722689075) 0%, rgba(34,193,226,1) 100%);
   border-radius: 8px;
   padding: 1vw;
-  min-width: 35vw;
+  min-width: 40vw;
   overflow-wrap: anywhere;
-  max-width: 35vw;
- 
+  
   p{
     color: white;
   }
@@ -34,6 +33,9 @@
   flex-direction: row;
   gap: 1vw;
   max-width:50%;
+  input{
+    min-width: 1.5vw;
+  }
 
 }
 .todoItemRight{
@@ -54,6 +56,13 @@ color: white;
 .iconDescription:hover{
   color: white;
 }
+.textDescription,
+    .todoTime,
+    .taskName, 
+    .todoDate {
+      font-size: 2vw;
+    }
+  
 
 .todoItemContainerWIthSpanAndCheckbox{
   display: flex;
