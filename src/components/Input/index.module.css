@@ -61,12 +61,13 @@
   min-width: 35vw;
 }
 .inputBlock .timeBlock input {
-  min-width: 10vw;
+  min-width: 16vw;
   border: none;
   background-color: rgb(120, 220, 240);
   color: white;
   -webkit-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
+  font-size: 3vw;
 }
 .inputBlock .timeBlock input:hover {
   background-color: rgb(34, 193, 226);
@@ -77,11 +78,11 @@
 .inputBlock .weidInput {
   min-width: 35vw;
   color: white;
-  font-size: 2vw;
+  font-size: 3vw;
 }
 .inputBlock .timeInput {
   max-width: 25vw;
-  font-size: 2vw;
+  font-size: 3vw;
 }
 .inputBlock .taskDescriptionInput {
   border: none;
@@ -155,8 +156,9 @@
   }
   .inputBlock .timeBlock {
     min-width: 80vw;
+    font-size: 5vw;
   }
-  .inputBlock input {
+  .inputBlock .timeBlock input {
     max-width: 80vw;
     min-height: 12vw;
     font-size: 5vw;
@@ -173,6 +175,7 @@
   }
   .inputBlock .weidInput {
     min-width: 80vw;
+    font-size: 5vw;
   }
   .inputBlock button:hover {
     background-color: rgb(120, 220, 240);
@@ -191,6 +194,7 @@
   }
   .inputBlock .timeBlock {
     min-width: 80vw;
+    font-size: 3vw;
   }
   .inputBlock input {
     max-width: 80vw;

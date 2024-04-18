@@ -71,12 +71,18 @@
   .containerWithNotes p {
     font-size: 7vw;
   }
+  .containerWithNotes .notesInput:focus {
+    font-size: 5vw;
+  }
 }
 @media only screen and (max-width: 766px) and (orientation: landscape) {
   .containerWithNotes {
     min-width: 80vw;
   }
   .containerWithNotes p {
+    font-size: 3vw;
+  }
+  .containerWithNotes .notesInput:focus {
     font-size: 3vw;
   }
 }
